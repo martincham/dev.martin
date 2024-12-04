@@ -1,0 +1,65 @@
+@import "@fontsource-variable/crimson-pro";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+
+/* Define CSS Variables in :root */
+:root {
+    --background-color: #020617; /* Zinc 900 */
+    --foreground-color: #1f2937; /* Gray 800 */
+    --primary-color: #2563eb; /* Blue 600 */
+    --secondary-color: #9333ea; /* Purple 600 */
+    --muted-color: rgba(255, 255, 255, 0.6); /* Muted white */
+    --border-color: rgba(255, 255, 255, 0.15); /* Subtle border */
+    --radius-md: 8px; /* Medium rounded corners */
+    --transition: all 0.2s ease-in-out; /* Smooth animations */
+
+    --serif-font: "Crimson Pro Variable", serif; /* Default font family */
+    --sans-font: "Inter", sans-serif; /* Default font family */
+}
+
+@layer utilities {
+    .dot-grid {
+        background-image: radial-gradient(
+            circle,
+            rgba(255, 255, 255, 0.1) 1px,
+            transparent 1px
+        );
+        background-size: 20px 20px;
+        background-position: center;
+    }
+}
+/* Base Styles */
+body {
+    background-color: var(--background-color); /* Fallback for Tailwind */
+    color: rgba(255, 255, 255, 0.87);
+    font-family: var(--sans-font);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+    transition: var(--transition);
+    color: var(--primary-color); /* Links default to primary color */
+}
+
+a:hover {
+    color: var(--secondary-color); /* Link hover to secondary color */
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+button:hover {
+    transform: scale(1.02);
+}
