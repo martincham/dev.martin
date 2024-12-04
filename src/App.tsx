@@ -5,15 +5,22 @@ import ProjectsSection from "./components/ProjectsSection";
 import SkillsSection from "./components/SkillsSection";
 import ContactSection from "./components/ContactSection";
 
+import DotGrid from "./components/ui/DotGrid";
+
 function App() {
   return (
-    <div className="bg-zinc-950 min-h-screen p-8 dot-grid">
+    <div className=" min-h-screen  relative">
+      <DotGrid />
       <Navbar />
-      <HeroSection />
-      <AboutSection />
-      <ProjectsSection />
-      <SkillsSection />
-      <ContactSection />
+      <div className="z-10 p-8 relative inset-0 flex justify-center">
+        <div className="justify-center ">
+          <HeroSection />
+          <AboutSection />
+          <ProjectsSection />
+          <SkillsSection />
+          <ContactSection />
+        </div>
+      </div>
     </div>
   );
 }
