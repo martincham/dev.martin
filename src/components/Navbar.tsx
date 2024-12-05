@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav className="z-50 sticky top-2 shadow-md border border-translucent-white hover:border-white backdrop-blur-md rounded-full">
+    <nav className="m-4 z-50 sticky top-2 shadow-md border  hover:border-white bg-black-black backdrop-blur-md rounded-full">
       <ul className="flex justify-around p-4">
         <li>
           <a href="#hero" className="">

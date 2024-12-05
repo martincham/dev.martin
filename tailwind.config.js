@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        sans: ["Space Grotesk", "sans-serif"],
+        serif: ["Crimson Pro Variable", "serif"],
       },
       colors: {
         "translucent-white": "rgba(255, 255, 255, 0.5)",

@@ -4,22 +4,32 @@ const DotGrid = () => {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      setScrollY(window.scrollY);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setScrollY(window.scrollY);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <div
-      className="absolute top-0 left-0 w-full h-[200vh] z-0"
+      className="fixed top-0 left-0 w-full z-0"
       style={{
+        height: "100vh",
         backgroundImage:
-          "radial-gradient(circle, rgba(0, 229, 255, .8) 1px, transparent 1px)",
-        backgroundSize: "40px 40px",
-        backgroundPosition: `0px ${scrollY * 0.5}px`, // Moves slower for parallax
+          "radial-gradient(circle, rgba(0, 255, 255, 0.7) 1px, transparent 1px)",
+        backgroundSize: "20px 20px",
+        backgroundPosition: `0px ${scrollY * -0.2}px`,
       }}
     ></div>
   );

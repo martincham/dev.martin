@@ -5,12 +5,12 @@ import ProjectsSection from "./components/ProjectsSection";
 import SkillsSection from "./components/SkillsSection";
 import ContactSection from "./components/ContactSection";
 
-import DotGrid from "./components/ui/DotGrid";
+// import DotGrid from "./components/ui/DotGrid";
 
 function App() {
   return (
-    <div className=" min-h-screen  relative">
-      <DotGrid />
+    <div className=" min-h-screen  relative ">
+      {/* <DotGrid /> */}
       <Navbar />
       <div className="z-10 p-8 relative inset-0 flex justify-center">
         <div className="justify-center ">
