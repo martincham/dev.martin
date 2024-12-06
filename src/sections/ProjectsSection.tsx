@@ -9,14 +9,27 @@ import {
 
 const ProjectsSection = () => {
   return (
-    <section
-      id="projects"
-      className="py-20 backdrop-blur-sm border-translucent-white border rounded-3xl"
-    >
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-semibold">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
-          <Card className="w-[350px]">
+    <section id="projects" className="">
+      <div className="mx-auto text-center bg-secondary backdrop-blur-md border rounded-3xl p-4 ">
+        <h2 className="text-3xl font-semibold py-2">Projects</h2>
+        <div className="grid opacity-100 grid-cols-1 md:grid-cols-2  gap-8 p-4">
+          <Card
+            className="    cursor-pointer select-none
+              active:translate-y-2  active:[box-shadow:0_0px_0_0_var(--border),0_0px_0_0_var(--muted)]
+              active:border-b-[0px]
+              transition-all duration-150 [box-shadow:0_6px_0_0_var(--border),0_9px_0_0_var(--muted)]
+                "
+          >
+            <CardHeader>
+              <CardTitle>Websites</CardTitle>
+              <CardDescription>
+                Deploy your new project in one-click.
+              </CardDescription>
+            </CardHeader>
+            <CardContent></CardContent>
+            <CardFooter className="flex justify-between"></CardFooter>
+          </Card>
+          <Card className="w- backdrop-blur-sm ">
             <CardHeader>
               <CardTitle>Create project</CardTitle>
               <CardDescription>

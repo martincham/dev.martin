@@ -1,10 +1,7 @@
 const ContactSection = () => {
   return (
-    <section
-      id="contact"
-      className="py-20 backdrop-blur-sm rounded-3xl border-translucent-white"
-    >
-      <div className="max-w-4xl mx-auto text-center">
+    <section id="contact" className="">
+      <div className="mx-auto text-center bg-secondary backdrop-blur-md border rounded-3xl p-4">
         <h2 className="text-3xl font-semibold">Contact Me</h2>
         <p className="mt-4">
           Let's connect! Feel free to reach out via email or LinkedIn.

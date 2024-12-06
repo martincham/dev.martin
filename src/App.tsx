@@ -14,14 +14,13 @@ function App() {
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <div className=" min-h-screen  relative bg-background">
         <DotGrid />
-        <div className="mx-auto max-w-xl">
+        <div className="mx-auto max-w-3xl">
           <Navbar />
 
           <div className="z-10 p-8 relative inset-0 flex mx-auto ">
-            <div className="justify-center width-auto">
-              <div>
-                <ModeToggle />
-              </div>
+            <div className="justify-center items-center width-auto space-y-20">
+              <ModeToggle />
+
               <HeroSection />
               <AboutSection />
               <ProjectsSection />
