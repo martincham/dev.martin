@@ -1,9 +1,9 @@
 const Navbar = () => {
   return (
-    <nav className="m-8 z-50 sticky top-2 shadow-md border border-translucent-white transition-all duration-300 hover:border-white  hover:backdrop-blur-2xl backdrop-blur-md rounded-full">
-      <ul className="flex justify-around p-4 text-sm md:text-lg lg:text-xl text-white ">
+    <nav className="m-8 z-50 sticky top-2 shadow-md  border transition-all duration-300 hover:border-foreground  hover:backdrop-blur-2xl backdrop-blur-md rounded-full">
+      <ul className="flex justify-around p-4 text-sm md:text-lg lg:text-xl text-foreground ">
         <li>
-          <a href="#hero" className="hover:text-purple">
+          <a href="#hero" className="hover:text-accent">
             Home
           </a>
         </li>
