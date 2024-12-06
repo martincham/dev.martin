@@ -1,6 +1,7 @@
 @import "@fontsource-variable/crimson-pro";
 @import "@fontsource-variable/space-grotesk";
 @import "@fontsource-variable/jetbrains-mono";
+@import "@fontsource-variable/bodoni-moda";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,7 +23,7 @@
         --secondary-foreground: rgba(22, 22, 22);
         --muted: rgba(245, 245, 245);
         --muted-foreground: rgba(115, 115, 115);
-        --accent: rgba(245, 245, 245);
+        --accent: rgba(0, 255, 255, 0.7);
         --accent-foreground: rgba(22, 22, 22);
         --destructive: rgba(214, 49, 49);
         --destructive-foreground: rgba(249, 249, 249);
@@ -36,6 +37,7 @@
         --chart-5: rgba(241, 96, 86);
         --radius: 0.5rem;
         --dot-color: rgba(0, 255, 255, 0.7);
+        --shadow: rgba(113, 113, 122, 0.3);
     }
     .dark {
         --background: rgba(9, 9, 11);
@@ -50,7 +52,7 @@
         --secondary-foreground: rgba(249, 249, 249);
         --muted: rgba(37, 37, 37);
         --muted-foreground: rgba(162, 162, 162);
-        --accent: rgba(37, 37, 37);
+        --accent: rgba(0, 255, 255, 0.3);
         --accent-foreground: rgba(249, 249, 249);
         --destructive: rgba(127, 29, 29);
         --destructive-foreground: rgba(249, 249, 249);
@@ -63,7 +65,7 @@
         --chart-4: rgba(175, 86, 219);
         --chart-5: rgba(226, 54, 111);
         --dot-color: rgba(0, 255, 255, 0.3);
-        --shadow: rgba(9, 9, 11);
+        --shadow: rgba(9, 9, 11, 0.8);
     }
 }
 :root {
@@ -72,7 +74,7 @@
     --radius-md: 8px; /* Medium rounded corners */
     --transition: all 0.2s ease-in-out; /* Smooth animations */
 
-    --serif-font: "Crimson Pro Variable", serif; /* Default font family */
+    --serif-font: "Bodoni Moda", serif; /* Default font family */
     --sans-font: "Space Grotesk", sans-serif; /* Default font family */
     --mono-font: "JetBrains Mono", monospace; /* Default font family */
 }

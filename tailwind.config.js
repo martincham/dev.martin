@@ -6,7 +6,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Space Grotesk", "sans-serif"],
-        serif: ["Crimson Pro Variable", "serif"],
+        serif: ["Bodoni Moda", "serif"],
         mono: ["JetBrains Mono", "monospace"],
       },
       colors: {

@@ -12,13 +12,13 @@ import DotGrid from "./components/ui/DotGrid";
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className=" min-h-screen  relative bg-background">
+      <div className="min-h-screen  relative bg-background font-serif dark:font-sans">
         <DotGrid />
         <div className="mx-auto max-w-3xl">
           <Navbar />
 
           <div className="z-10 p-8 relative inset-0 flex mx-auto ">
-            <div className="justify-center items-center width-auto space-y-20">
+            <div className="justify-center items-center width-auto space-y-20 mb-20">
               <ModeToggle />
 
               <HeroSection />
