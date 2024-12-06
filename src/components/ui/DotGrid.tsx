@@ -27,7 +27,7 @@ const DotGrid = () => {
       style={{
         height: "100vh",
         backgroundImage:
-          "radial-gradient(circle, rgba(0, 255, 255, 0.7) 1px, transparent 1px)",
+          "radial-gradient(circle, rgba(0, 255, 255, 0.3) 1px, transparent 1px)",
         backgroundSize: "20px 20px",
         backgroundPosition: `0px ${scrollY * -0.2}px`,
       }}

@@ -1,3 +1,12 @@
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "./components/ui/card";
+
 const ProjectsSection = () => {
   return (
     <section
@@ -7,18 +16,16 @@ const ProjectsSection = () => {
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-semibold">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
-          <div className="p-6 bg-zinc-800 rounded-3xl shadow-md">
-            <h3 className="text-xl font-bold">Project 1</h3>
-            <p className="mt-2 ">
-              A brief description of the project goes here.
-            </p>
-            <a
-              href="#"
-              className="mt-4 inline-block text-blue-600 hover:underline"
-            >
-              View Project
-            </a>
-          </div>
+          <Card className="w-[350px]">
+            <CardHeader>
+              <CardTitle>Create project</CardTitle>
+              <CardDescription>
+                Deploy your new project in one-click.
+              </CardDescription>
+            </CardHeader>
+            <CardContent></CardContent>
+            <CardFooter className="flex justify-between"></CardFooter>
+          </Card>
         </div>
       </div>
     </section>
