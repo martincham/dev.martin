@@ -7,18 +7,18 @@ import ContactSection from "@/sections/ContactSection";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 
-import DotGrid from "./components/ui/DotGrid";
+/*import DotGrid from "./components/ui/DotGrid"; */
 
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="min-h-screen  relative bg-background font-serif dark:font-sans">
-        <DotGrid />
-        <div className="mx-auto max-w-3xl">
+      <div className="min-h-screen mx-auto relative bg-background">
+        {/* <DotGrid /> */}
+        <div className="mx-auto">
           <Navbar />
 
-          <div className="z-10 p-8 relative inset-0 flex mx-auto ">
-            <div className="justify-center items-center width-auto space-y-20 mb-20">
+          <div className="z-10 mx-auto">
+            <div className="justify-center items-center width-auto  mb-20">
               <ModeToggle />
 
               <HeroSection />

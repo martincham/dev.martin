@@ -1,12 +1,13 @@
 const HeroSection = () => {
   return (
     <section id="hero" className="">
-      <div className="mx-auto text-center bg-secondary backdrop-blur-md border rounded-3xl p-8 py-16 ">
-        <h1 className="text-6xl tracking-widest font-semibold mx-auto">
-          Martin Chamberlin
+      <div className="mx-auto">
+        <h1 className="tracking-wider  mx-auto">
+          👋
+          <br /> I'm Martin Chamberlin, <br />a developer and designer.
         </h1>
         <p className="text-xl mt-4 font-light">
-          Full-Stack Developer | Problem Solver | Designer | Builder
+          Backend | Frontend | UI/UX | Designer | Builder
         </p>
       </div>
     </section>

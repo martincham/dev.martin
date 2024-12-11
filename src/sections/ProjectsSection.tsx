@@ -9,17 +9,11 @@ import {
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="">
-      <div className="mx-auto text-center bg-secondary backdrop-blur-md border rounded-3xl p-4 ">
-        <h2 className="text-3xl font-semibold py-2">Projects</h2>
+    <section id="projects" className="bg-golden">
+      <div className="mx-auto text-center p-4 ">
+        <h2 className=" py-2">Projects</h2>
         <div className="grid opacity-100 grid-cols-1 sm:grid-cols-2  gap-8 p-4">
-          <Card
-            className="    cursor-pointer select-none
-              active:translate-y-2  active:[box-shadow:0_0px_0_0_var(--border),0_0px_0_0_var(--shadow)]
-              active:border-b-[0px]
-              transition-all duration-150 [box-shadow:0_6px_0_0_var(--border),0_9px_0_0_var(--shadow)]
-                "
-          >
+          <Card className="">
             <CardHeader>
               <CardTitle>Art Portfolio</CardTitle>
               <CardDescription>

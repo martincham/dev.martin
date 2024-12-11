@@ -7,8 +7,118 @@
 @tailwind utilities;
 
 /* Global Styles */
-/* Colors */
 
+/* Fonts */
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings:
+        "liga" 1,
+        "calt" 1,
+        "dlig" 1,
+        "ss01" 1,
+        "ss02" 1;
+    text-color: var(--foreground-color);
+}
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: InterVariable, sans-serif;
+    }
+}
+a {
+    text-decoration: none;
+    transition: var(--transition);
+    color: var(--primary-color);
+}
+h1 {
+    font-size: min(4rem, 10vw);
+    font-weight: 600;
+    line-height: 1;
+}
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+p {
+    font-size: 1rem;
+    color: var(--secondary-foreground);
+}
+
+:root {
+    --muted-color: rgba(255, 255, 255, 0.6); /* Muted white */
+    --border-color: rgba(255, 255, 255, 0.15); /* Subtle border */
+    --radius-md: 8px; /* Medium rounded corners */
+    --transition: all 0.2s ease-in-out; /* Smooth animations */
+
+    --serif-font: "Bodoni Moda", serif; /* Default font family */
+    --sans-font: "Space Grotesk", sans-serif; /* Default font family */
+    --mono-font: "JetBrains Mono", monospace; /* Default font family */
+}
+
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+section {
+    padding: 10vh 10vw;
+}
+
+/* Dot Grid */
+@layer utilities {
+    .dot-grid {
+        background-image: radial-gradient(
+            circle,
+            rgba(255, 255, 255, 0.1) 1px,
+            transparent 1px
+        );
+        background-size: 20px 20px;
+        background-position: 0 0;
+    }
+
+    /* Animation for Background Movement */
+    .animate-dot-grid {
+        animation: move-grid 1s linear infinite;
+    }
+}
+
+/* Keyframes for Moving the Grid */
+@keyframes move-grid {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 20px 20px;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+/* Colors */
+:root {
+    --golden: rgb(1, 0.83, 0.2);
+    --turq: rgb(0.11, 0.726, 0.532);
+    --salmon: rgb(1, 0.628, 0.454);
+}
+/* P3 Color Versions */
+@supports (color: color(display-p3 1 1 1)) {
+    :root {
+        --golden: color(display-p3 1 0.83 0.2);
+        --turq: color(display-p3 0.11 0.726 0.532);
+        --salmon: color(display-p3 1 0.628 0.454);
+    }
+}
+
+/* Base Colors */
 @layer base {
     :root {
         --background: rgba(255, 255, 255);
@@ -19,7 +129,7 @@
         --popover-foreground: rgba(9, 9, 9);
         --primary: rgba(22, 22, 22);
         --primary-foreground: rgba(249, 249, 249);
-        --secondary: rgba(225, 250, 245);
+        --secondary: rgba(244, 244, 245);
         --secondary-foreground: rgba(22, 22, 22);
         --muted: rgba(245, 245, 245);
         --muted-foreground: rgba(115, 115, 115);
@@ -66,85 +176,5 @@
         --chart-5: rgba(226, 54, 111);
         --dot-color: rgba(0, 255, 255, 0.3);
         --shadow: rgba(9, 9, 11, 0.8);
-    }
-}
-:root {
-    --muted-color: rgba(255, 255, 255, 0.6); /* Muted white */
-    --border-color: rgba(255, 255, 255, 0.15); /* Subtle border */
-    --radius-md: 8px; /* Medium rounded corners */
-    --transition: all 0.2s ease-in-out; /* Smooth animations */
-
-    --serif-font: "Bodoni Moda", serif; /* Default font family */
-    --sans-font: "Space Grotesk", sans-serif; /* Default font family */
-    --mono-font: "JetBrains Mono", monospace; /* Default font family */
-}
-
-/* Base Styles */
-body {
-    text-color: var(--foreground-color);
-    font-family: var(--sans-font);
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    scroll-behavior: smooth;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-    font: var(--serif-font);
-    text-decoration: none;
-    transition: var(--transition);
-    color: var(--primary-color); /* Links default to primary color */
-}
-
-a:hover {
-    color: var(--secondary-color); /* Link hover to secondary color */
-}
-
-button {
-    font-family: inherit;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-button:hover {
-    transform: scale(1.02);
-}
-
-/* Dot Grid */
-@layer utilities {
-    .dot-grid {
-        background-image: radial-gradient(
-            circle,
-            rgba(255, 255, 255, 0.1) 1px,
-            transparent 1px
-        );
-        background-size: 20px 20px;
-        background-position: 0 0;
-    }
-
-    /* Animation for Background Movement */
-    .animate-dot-grid {
-        animation: move-grid 1s linear infinite;
-    }
-}
-
-/* Keyframes for Moving the Grid */
-@keyframes move-grid {
-    from {
-        background-position: 0 0;
-    }
-    to {
-        background-position: 20px 20px;
-    }
-}
-
-@layer base {
-    * {
-        @apply border-border;
-    }
-    body {
-        @apply bg-background text-foreground;
     }
 }
