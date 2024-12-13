@@ -116,6 +116,7 @@ section {
     --golden: rgb(1, 0.83, 0.2);
     --turq: rgb(0.11, 0.726, 0.532);
     --salmon: rgb(1, 0.628, 0.454);
+    --purp: rgb(0.588, 0.459, 1);
 }
 /* P3 Color Versions */
 @supports (color: color(display-p3 1 1 1)) {
@@ -123,6 +124,7 @@ section {
         --golden: color(display-p3 1 0.83 0.2);
         --turq: color(display-p3 0.11 0.726 0.532);
         --salmon: color(display-p3 1 0.628 0.454);
+        --purp: color(display-p3 0.588 0.459 1);
     }
 }
 

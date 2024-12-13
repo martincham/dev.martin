@@ -6,33 +6,60 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import ScrollAnimation from "@/components/ui/ScrollAnimation";
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="bg-golden">
+    <section id="projects" className="bg-golden text-black">
       <div className="mx-auto text-left p-4 ">
-        <h2 className="text-background ml-[10vw] py-2">Projects</h2>
-        <div className="grid opacity-100 grid-cols-1 sm:grid-cols-2  gap-8 p-4">
-          <Card className="">
+        <h2 className=" ml-[10vw] py-2">Projects</h2>
+        <div className="grid opacity-100 grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-8">
+          <ScrollAnimation>
+          <Card className="bg-golden text-black ">
             <CardHeader>
-              <CardTitle>Art Portfolio</CardTitle>
+              <CardTitle>Art Portfolio Website</CardTitle>
               <CardDescription>
-                Deploy your new project in one-click.
+                Built with React.js, Tailwind CSS,
               </CardDescription>
             </CardHeader>
             <CardContent></CardContent>
-            <CardFooter className="flex justify-between"></CardFooter>
+            <CardFooter className="justify-between">
+              <a href="https://github.com/martincham/martincham.github.io">GitHub -></a>
+              <p>2024</p>
+            </CardFooter>
           </Card>
-          <Card className="w- backdrop-blur-sm ">
+          </ScrollAnimation>
+          <ScrollAnimation>
+          <Card className="bg-golden text-black">
             <CardHeader>
-              <CardTitle>Create project</CardTitle>
+              <CardTitle>NBA Player Analyzer</CardTitle>
               <CardDescription>
-                Deploy your new project in one-click.
+                Custom algorithm for evaluating player value. Pushes data to Google Sheets API.
               </CardDescription>
             </CardHeader>
             <CardContent></CardContent>
-            <CardFooter className="flex justify-between"></CardFooter>
+            <CardFooter className="justify-between">
+              <a href="https://github.com/martincham/espn-nba-fantasy-analyzer">GitHub -></a>
+              <p>2023-24</p>
+            </CardFooter>
           </Card>
+          </ScrollAnimation>
+          <ScrollAnimation>
+          <Card className="bg-golden text-black">
+            <CardHeader>
+              <CardTitle>Machine Learning Parts Catalog</CardTitle>
+              <CardDescription>
+                Art projects using Machine Learning to create a catalog of useless parts.
+              </CardDescription>
+            </CardHeader>
+            <CardContent></CardContent>
+            <CardFooter className="justify-between">
+              <a href="https://github.com/martincham/mcMasterImageMosaic">GitHub -></a>
+              <p>2021</p>
+            </CardFooter>
+          </Card>
+          </ScrollAnimation>
+
         </div>
       </div>
     </section>

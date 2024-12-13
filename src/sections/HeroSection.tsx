@@ -4,10 +4,11 @@ const HeroSection = () => {
       <div className="mx-auto">
         <h1 className="tracking-wider  mx-auto">
           👋
-          <br /> I'm Martin Chamberlin, <br />a developer and designer.
+          <br /> I'm Martin Chamberlin: <br />
+          developer, designer, and builder.
         </h1>
         <p style={{ fontSize: "min(1.5rem, 8vw)" }} className="mx-auto">
-          Backend | Frontend | UI/UX | Designer | Builder
+          Data | Backend | Frontend | UI/UX | IOT | Hardware
         </p>
       </div>
     </section>

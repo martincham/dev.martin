@@ -57,6 +57,7 @@ export default {
         golden: "var(--golden)",
         turq: "var(--turq)",
         salmon: "var(--salmon)",
+        purp: "var(--purp)",
       },
       borderRadius: {
         lg: "var(--radius)",

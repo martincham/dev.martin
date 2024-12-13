@@ -16,7 +16,7 @@ const Navbar = () => {
         <li className=" text-center hover:translate-y-[1px] duration-150">
           <a
             href="#about"
-            className="block py-2 px-1 sm:px-4 hover:text-muted-foreground rounded-lg md:py-3 lg:py-4"
+            className="block py-2 px-1 sm:px-4 hover:text-turq rounded-lg  "
           >
             About
           </a>
@@ -24,7 +24,7 @@ const Navbar = () => {
         <li className=" text-center hover:translate-y-[1px] duration-150">
           <a
             href="#projects"
-            className="block py-2 px-1 sm:px-4 hover:text-muted-foreground rounded-lg md:py-3 lg:py-4"
+            className="block py-2 px-1 sm:px-4  hover:text-golden rounded-lg  "
           >
             Projects
           </a>
@@ -32,7 +32,7 @@ const Navbar = () => {
         <li className=" text-center hover:translate-y-[1px] duration-150">
           <a
             href="#skills"
-            className="block py-2 px-1 sm:px-4 hover:text-muted-foreground rounded-lg md:py-3 lg:py-4"
+            className="block py-2 px-1 sm:px-4 hover:text-salmon rounded-lg  "
           >
             Skills
           </a>
@@ -40,7 +40,7 @@ const Navbar = () => {
         <li className=" text-center hover:translate-y-[1px] duration-150">
           <a
             href="#contact"
-            className="block py-2 px-1 sm:px-4 hover:text-muted-foreground rounded-lg md:py-3 lg:py-4"
+            className="block py-2 px-1 sm:px-4 hover:text-muted-foreground rounded-lg  "
           >
             Contact
           </a>
