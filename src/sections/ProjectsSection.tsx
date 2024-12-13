@@ -59,8 +59,8 @@ const ProjectsSection = () => {
               <CardHeader>
                 <CardTitle>NBA Player Analyzer</CardTitle>
                 <CardDescription>
-                  Custom algorithm for evaluating player value. Pushes data to
-                  Google Sheets API.
+                  Python CLI for evaluating player value. Analzed and pushes
+                  data to Google Sheets API.
                 </CardDescription>
               </CardHeader>
               <CardContent></CardContent>
