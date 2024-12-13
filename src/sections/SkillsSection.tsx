@@ -13,7 +13,7 @@ const SkillsSection = () => {
           <div className="p-2">SQL</div>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 my-8">
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2 my-8">
           <h3 className="col-start-1 col-span-full">Tools</h3>
           <div className="p-2">React</div>
           <div className="p-2">Tailwind CSS</div>

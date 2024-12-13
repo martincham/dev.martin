@@ -15,7 +15,7 @@ const ScrollAnimation: React.FC<ScrollAnimationProps> = ({
   return (
     <div
       ref={ref as React.RefObject<HTMLDivElement>}
-      className={`transition-all  duration-700 ease-out will-change-transform ${
+      className={`transition-transform  duration-700 ease-out will-change-transform ${
         isVisible ? "opacity-100 animate-fadeInUp" : "opacity-0 translate-y-6"
       } ${className}`}
     >

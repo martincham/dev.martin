@@ -10,8 +10,8 @@ import {
 const ProjectsSection = () => {
   return (
     <section id="projects" className="bg-golden">
-      <div className="mx-auto text-center p-4 ">
-        <h2 className="text-background py-2">Projects</h2>
+      <div className="mx-auto text-left p-4 ">
+        <h2 className="text-background ml-[10vw] py-2">Projects</h2>
         <div className="grid opacity-100 grid-cols-1 sm:grid-cols-2  gap-8 p-4">
           <Card className="">
             <CardHeader>

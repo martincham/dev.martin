@@ -6,7 +6,7 @@ const HeroSection = () => {
           👋
           <br /> I'm Martin Chamberlin, <br />a developer and designer.
         </h1>
-        <p className="text-xl mt-4 font-light">
+        <p style={{ fontSize: "min(1.5rem, 8vw)" }} className="mx-auto">
           Backend | Frontend | UI/UX | Designer | Builder
         </p>
       </div>
