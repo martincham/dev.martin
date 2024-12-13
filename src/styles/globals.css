@@ -48,7 +48,7 @@ h3 {
 p {
     font-size: min(1rem, 5vw);
     font-weight: 400;
-    color: var(--secondary-foreground);
+    color: inherit;
 }
 
 :root {

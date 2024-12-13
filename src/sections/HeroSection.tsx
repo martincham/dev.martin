@@ -8,7 +8,7 @@ const HeroSection = () => {
           developer, designer, and builder.
         </h1>
         <p style={{ fontSize: "min(1.5rem, 8vw)" }} className="mx-auto">
-          Data | Backend | Frontend | UI/UX | IOT | Hardware
+          Data | Backend | Frontend | UI/UX | IOT
         </p>
       </div>
     </section>

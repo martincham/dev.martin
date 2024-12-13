@@ -5,14 +5,14 @@ const Navbar = () => {
       className="font-medium z-50 sticky top-0  hover:border-secondary-foreground hover:backdrop-blur-lg backdrop-blur-md bg-background  min-w-full"
     >
       <ul className="flex flex-wrap justify-around   text-foreground transition-colors duration-200">
-        <li className=" text-center hover:translate-y-[1px] duration-150">
+        {/* <li className=" text-center hover:translate-y-[1px] duration-150">
           <a
             href="#hero"
             className="block py-2 px-1 sm:px-4 hover:text-muted-foreground rounded-lg "
           >
             Home
           </a>
-        </li>
+        </li> */}
         <li className=" text-center hover:translate-y-[1px] duration-150">
           <a
             href="#about"

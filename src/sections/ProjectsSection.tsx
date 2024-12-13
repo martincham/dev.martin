@@ -25,7 +25,7 @@ const ProjectsSection = () => {
             <CardContent></CardContent>
             <CardFooter className="justify-between">
               <a href="https://github.com/martincham/martincham.github.io">GitHub -></a>
-              <p>2024</p>
+              <p className="text-black">2024</p>
             </CardFooter>
           </Card>
           </ScrollAnimation>
@@ -40,7 +40,7 @@ const ProjectsSection = () => {
             <CardContent></CardContent>
             <CardFooter className="justify-between">
               <a href="https://github.com/martincham/martincham.github.io">GitHub -></a>
-              <p>2024</p>
+              <p className="text-black">2024</p>
             </CardFooter>
           </Card>
           </ScrollAnimation>
@@ -55,7 +55,7 @@ const ProjectsSection = () => {
             <CardContent></CardContent>
             <CardFooter className="justify-between">
               <a href="https://github.com/martincham/espn-nba-fantasy-analyzer">GitHub -></a>
-              <p>2023-24</p>
+              <p className="text-black">2023-24</p>
             </CardFooter>
           </Card>
           </ScrollAnimation>
@@ -70,7 +70,7 @@ const ProjectsSection = () => {
             <CardContent></CardContent>
             <CardFooter className="justify-between">
               <a href="https://github.com/martincham/mcMasterImageMosaic">GitHub -></a>
-              <p>2021</p>
+              <p className="text-black">2021</p>
             </CardFooter>
           </Card>
           </ScrollAnimation>

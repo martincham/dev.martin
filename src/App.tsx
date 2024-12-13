@@ -5,7 +5,7 @@ import ProjectsSection from "@/sections/ProjectsSection";
 import SkillsSection from "@/sections/SkillsSection";
 import ContactSection from "@/sections/ContactSection";
 import { ThemeProvider } from "@/components/theme-provider";
-import { ModeToggle } from "@/components/ui/mode-toggle";
+import ExperienceSection from "./sections/ExperienceSection";
 
 /*import DotGrid from "./components/ui/DotGrid"; */
 
@@ -19,11 +19,10 @@ function App() {
 
           <div className="z-10 mx-auto">
             <div className="justify-center items-center width-auto  mb-20">
-              <ModeToggle />
-
               <HeroSection />
               <AboutSection />
               <ProjectsSection />
+              <ExperienceSection />
               <SkillsSection />
               <ContactSection />
             </div>
