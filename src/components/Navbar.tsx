@@ -5,7 +5,7 @@ const Navbar = () => {
         <li className="flex-1 text-center hover:translate-y-[1px] duration-150">
           <a
             href="#hero"
-            className="block py-2 sm:px-4 hover:text-muted-foreground rounded-lg md:py-3 lg:py-4"
+            className="block py-2 sm:px-4 hover:text-muted-foreground rounded-lg "
           >
             Home
           </a>
