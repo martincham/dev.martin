@@ -24,7 +24,7 @@ const ProjectsSection = () => {
             </CardHeader>
             <CardContent></CardContent>
             <CardFooter className="justify-between">
-              <a href="https://github.com/martincham/martincham.github.io">GitHub -></a>
+              <a href="https://github.com/martincham/martincham.github.io" className="text-blue-600 hover:text-muted-foreground">GitHub -></a>
               <p className="text-black">2024</p>
             </CardFooter>
           </Card>
@@ -39,7 +39,7 @@ const ProjectsSection = () => {
             </CardHeader>
             <CardContent></CardContent>
             <CardFooter className="justify-between">
-              <a href="https://github.com/martincham/martincham.github.io">GitHub -></a>
+              <a href="https://github.com/martincham/martincham.github.io" className="text-blue-600 hover:text-muted-foreground">GitHub -></a>
               <p className="text-black">2024</p>
             </CardFooter>
           </Card>
@@ -54,7 +54,7 @@ const ProjectsSection = () => {
             </CardHeader>
             <CardContent></CardContent>
             <CardFooter className="justify-between">
-              <a href="https://github.com/martincham/espn-nba-fantasy-analyzer">GitHub -></a>
+              <a href="https://github.com/martincham/espn-nba-fantasy-analyzer" className="text-blue-600 hover:text-muted-foreground">GitHub -></a>
               <p className="text-black">2023-24</p>
             </CardFooter>
           </Card>
@@ -69,7 +69,7 @@ const ProjectsSection = () => {
             </CardHeader>
             <CardContent></CardContent>
             <CardFooter className="justify-between">
-              <a href="https://github.com/martincham/mcMasterImageMosaic">GitHub -></a>
+              <a href="https://github.com/martincham/mcMasterImageMosaic" className="text-blue-600 hover:text-muted-foreground">GitHub -></a>
               <p className="text-black">2021</p>
             </CardFooter>
           </Card>

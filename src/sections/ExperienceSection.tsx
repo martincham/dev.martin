@@ -8,30 +8,44 @@ const ExperienceSection = () => {
           <h2 className="ml-[10vw]">Experience</h2>
           <div>
             <div className="flex justify-between">
+              <h3 className="">Freelance Software Engineer</h3>
+              <h3 className="">Present</h3>
+            </div>
+            <p>
+              <a href="https://cosmos.epic.com/">Cosmos</a> team at Epic
+              Systems.
+            </p>
+            <div className="pl-4">
+              <p>
+                •Developed population health analytics software using C#/.NET,
+                SQL, and Typescript
+              </p>
+              <p>
+                • Created distributed-system web services to communicate between
+                servers hosting over 100 million patients
+              </p>
+            </div>
+          </div>
+          {/* Epic Systems */}
+          <div>
+            <div className="flex justify-between">
               <h3 className="">Software Engineer</h3>
               <h3 className="">2019-21</h3>
             </div>
             <p>
-              I worked as a Software Engineer at{" "}
-              <a href="https://www.google.com">Google</a> for a year, where I
-              worked on a variety of projects, including:
+              <a href="https://cosmos.epic.com/">Cosmos</a> team at Epic
+              Systems.
             </p>
-            <ul>
-              <li>
-                Developing and maintaining a large-scale machine learning model
-                for a client
-              </li>
-              <li>Building and maintaining a web application for a client</li>
-              <li>
-                Collaborating with cross-functional teams to deliver
-                high-quality software
-              </li>
-            </ul>
-            <p>
-              I also gained experience in data analysis, machine learning, and
-              web development, and was able to contribute to the development of
-              various tools and libraries.
-            </p>
+            <div className="pl-4">
+              <p>
+                •Developed population health analytics software using C#/.NET,
+                SQL, and Typescript
+              </p>
+              <p>
+                • Created distributed-system web services to communicate between
+                servers hosting over 100 million patients
+              </p>
+            </div>
           </div>
           <hr className="my-4 mx-auto h-[1px] bg-black" />
         </ScrollAnimation>
