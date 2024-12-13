@@ -13,9 +13,24 @@ const ProjectsSection = () => {
     <section id="projects" className="bg-golden text-black">
       <div className="mx-auto text-left p-4 ">
         <h2 className=" ml-[10vw] py-2">Projects</h2>
-        <div className="grid opacity-100 grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-8">
+        <div className="grid opacity-100 grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-8">
           <ScrollAnimation>
-          <Card className="bg-golden text-black ">
+          <Card className="">
+            <CardHeader>
+              <CardTitle>Developer Portfolio</CardTitle>
+              <CardDescription>
+                Built with React.js, Tailwind CSS,
+              </CardDescription>
+            </CardHeader>
+            <CardContent></CardContent>
+            <CardFooter className="justify-between">
+              <a href="https://github.com/martincham/martincham.github.io">GitHub -></a>
+              <p>2024</p>
+            </CardFooter>
+          </Card>
+          </ScrollAnimation>
+          <ScrollAnimation>
+          <Card className="">
             <CardHeader>
               <CardTitle>Art Portfolio Website</CardTitle>
               <CardDescription>
@@ -30,7 +45,7 @@ const ProjectsSection = () => {
           </Card>
           </ScrollAnimation>
           <ScrollAnimation>
-          <Card className="bg-golden text-black">
+          <Card className="">
             <CardHeader>
               <CardTitle>NBA Player Analyzer</CardTitle>
               <CardDescription>
@@ -45,7 +60,7 @@ const ProjectsSection = () => {
           </Card>
           </ScrollAnimation>
           <ScrollAnimation>
-          <Card className="bg-golden text-black">
+          <Card className="">
             <CardHeader>
               <CardTitle>Machine Learning Parts Catalog</CardTitle>
               <CardDescription>
