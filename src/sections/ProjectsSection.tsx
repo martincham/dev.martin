@@ -14,46 +14,7 @@ const ProjectsSection = () => {
       <div className="mx-auto text-left p-4 ">
         <h2 className=" ml-[10vw] py-2">Projects</h2>
         <div className="grid opacity-100 grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          <ScrollAnimation>
-            <Card className="">
-              <CardHeader>
-                <CardTitle>Developer Portfolio</CardTitle>
-                <CardDescription>
-                  Built with React.js, Tailwind CSS,
-                </CardDescription>
-              </CardHeader>
-              <CardContent></CardContent>
-              <CardFooter className="justify-between">
-                <a
-                  href="https://github.com/martincham/martincham.github.io"
-                  className="text-blue-600 hover:text-muted-foreground"
-                >
-                  GitHub -{">"}
-                </a>
-                <p className="text-black">2024</p>
-              </CardFooter>
-            </Card>
-          </ScrollAnimation>
-          <ScrollAnimation>
-            <Card className="">
-              <CardHeader>
-                <CardTitle>Art Portfolio Website</CardTitle>
-                <CardDescription>
-                  Built with React.js, Tailwind CSS,
-                </CardDescription>
-              </CardHeader>
-              <CardContent></CardContent>
-              <CardFooter className="justify-between">
-                <a
-                  href="https://github.com/martincham/martincham.github.io"
-                  className="text-blue-600 hover:text-muted-foreground"
-                >
-                  GitHub -{">"}
-                </a>
-                <p className="text-black">2024</p>
-              </CardFooter>
-            </Card>
-          </ScrollAnimation>
+          {/* NBA Player Analyzer */}
           <ScrollAnimation>
             <Card className="">
               <CardHeader>
@@ -75,6 +36,50 @@ const ProjectsSection = () => {
               </CardFooter>
             </Card>
           </ScrollAnimation>
+          {/* Developer Portfolio */}
+          <ScrollAnimation>
+            <Card className="">
+              <CardHeader>
+                <CardTitle>Developer Portfolio</CardTitle>
+                <CardDescription>
+                  Built with React.js, Tailwind CSS,
+                </CardDescription>
+              </CardHeader>
+              <CardContent></CardContent>
+              <CardFooter className="justify-between">
+                <a
+                  href="https://github.com/martincham/martincham.github.io"
+                  className="text-blue-600 hover:text-muted-foreground"
+                >
+                  GitHub -{">"}
+                </a>
+                <p className="text-black">2024</p>
+              </CardFooter>
+            </Card>
+          </ScrollAnimation>
+          {/* Art Portfolio */}
+          <ScrollAnimation>
+            <Card className="">
+              <CardHeader>
+                <CardTitle>Art Portfolio Website</CardTitle>
+                <CardDescription>
+                  Built with React.js, Tailwind CSS,
+                </CardDescription>
+              </CardHeader>
+              <CardContent></CardContent>
+              <CardFooter className="justify-between">
+                <a
+                  href="https://github.com/martincham/martincham.github.io"
+                  className="text-blue-600 hover:text-muted-foreground"
+                >
+                  GitHub -{">"}
+                </a>
+                <p className="text-black">2024</p>
+              </CardFooter>
+            </Card>
+          </ScrollAnimation>
+
+          {/* McMasterCarr  */}
           <ScrollAnimation>
             <Card className="">
               <CardHeader>

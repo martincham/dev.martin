@@ -9,7 +9,7 @@ const Card = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "bg-inherit text-inherit flex flex-col h-full w-full rounded-xl border  shadow",
+      "bg-inherit text-inherit flex flex-col h-full w-full rounded-xl border  border-black",
       className,
     )}
     {...props}

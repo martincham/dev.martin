@@ -7,7 +7,8 @@ const AboutSection = () => {
         <ScrollAnimation>
           <h2 className="ml-[10vw]">About</h2>
           <p className="mt-4 text-black">
-            BA in Computer Scienc and Art, Grinnell College, 2019.
+            Based in New Haven, CT. I design and build digital and physical
+            things.
           </p>
           <p className="mt-4 text-black">
             BA Computer Scienc and Art, Grinnell College, 2019.

@@ -11,7 +11,7 @@ import ExperienceSection from "./sections/ExperienceSection";
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    <ThemeProvider>
       <div className="min-h-screen mx-auto relative bg-background">
         {/* <DotGrid /> */}
         <div className="mx-auto">

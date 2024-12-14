@@ -2,7 +2,7 @@ import ScrollAnimation from "@/components/ui/ScrollAnimation";
 
 const ExperienceSection = () => {
   return (
-    <section id="about" className="bg-purp">
+    <section id="experience" className="bg-purp">
       <div className="mx-auto  text-left !text-black p-4">
         <ScrollAnimation>
           <h2 className="ml-[10vw]">Experience</h2>
