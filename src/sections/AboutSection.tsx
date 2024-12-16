@@ -22,7 +22,7 @@ const AboutSection = () => {
             <a href="https://github.com/martincham">
               <div className="border-l border-black px-2 link ">GitHub</div>
             </a>
-            <a href="public/MartinChamberlinResume.pdf">
+            <a href="/MartinChamberlinResume.pdf">
               <div className="border-l border-black px-2 link ">Resume</div>
             </a>
           </div>
