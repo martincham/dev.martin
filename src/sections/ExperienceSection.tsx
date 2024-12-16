@@ -4,9 +4,9 @@ const ExperienceSection = () => {
   return (
     <section id="experience" className="bg-purp">
       <div className="mx-auto  text-left !text-black p-4">
+        <h2 className="ml-[10vw]">Experience</h2>
+        {/* Freelance */}
         <ScrollAnimation>
-          <h2 className="ml-[10vw]">Experience</h2>
-          {/* Freelance */}
           <div>
             <div className="flex justify-between">
               <h3 className="">Freelance Software Engineer</h3>
@@ -21,7 +21,10 @@ const ExperienceSection = () => {
             </ul>
           </div>
           <hr className="my-4 mx-auto h-[1px] bg-black" />
-          {/* Epic Systems */}
+        </ScrollAnimation>
+
+        {/* Epic Systems */}
+        <ScrollAnimation>
           <div>
             <div className="flex justify-between">
               <h3 className="">Software Engineer</h3>
