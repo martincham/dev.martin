@@ -28,11 +28,30 @@ const ProjectsSection = () => {
               <CardFooter className="justify-between">
                 <a
                   href="https://github.com/martincham/espn-nba-fantasy-analyzer"
-                  className="text-blue-600 hover:text-muted-foreground"
+                  className="link"
                 >
                   GitHub -{">"}
                 </a>
                 <p className="text-black">2023-24</p>
+              </CardFooter>
+            </Card>
+          </ScrollAnimation>
+          {/* Hubris */}
+          <ScrollAnimation>
+            <Card className="">
+              <CardHeader>
+                <CardTitle>Arduino Sculpture</CardTitle>
+                <CardDescription>
+                  A wirelessly communicating sculpture installation made with
+                  C++ and robotics.
+                </CardDescription>
+              </CardHeader>
+              <CardContent></CardContent>
+              <CardFooter className="justify-between">
+                <a href="https://github.com/martincham/hubris" className="link">
+                  GitHub -{">"}
+                </a>
+                <p className="text-black">2024</p>
               </CardFooter>
             </Card>
           </ScrollAnimation>
@@ -49,7 +68,7 @@ const ProjectsSection = () => {
               <CardFooter className="justify-between">
                 <a
                   href="https://github.com/martincham/martincham.github.io"
-                  className="text-blue-600 hover:text-muted-foreground"
+                  className="link"
                 >
                   GitHub -{">"}
                 </a>
@@ -70,7 +89,7 @@ const ProjectsSection = () => {
               <CardFooter className="justify-between">
                 <a
                   href="https://github.com/martincham/martincham.github.io"
-                  className="text-blue-600 hover:text-muted-foreground"
+                  className="link"
                 >
                   GitHub -{">"}
                 </a>
@@ -93,7 +112,7 @@ const ProjectsSection = () => {
               <CardFooter className="justify-between">
                 <a
                   href="https://github.com/martincham/mcMasterImageMosaic"
-                  className="text-blue-600 hover:text-muted-foreground"
+                  className="link"
                 >
                   GitHub -{">"}
                 </a>

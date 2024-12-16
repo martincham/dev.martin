@@ -31,8 +31,13 @@ const ExperienceSection = () => {
               <h3 className="">2019-21</h3>
             </div>
             <p>
-              <a href="https://cosmos.epic.com/">Cosmos</a> team at Epic
-              Systems.
+              <a
+                className="ink text-sky-700 hover:text-muted-foreground "
+                href="https://cosmos.epic.com/"
+              >
+                Cosmos
+              </a>{" "}
+              team at Epic Systems.
             </p>
             <ul className="pl-4 list-disc">
               <li>
