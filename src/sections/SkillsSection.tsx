@@ -4,7 +4,7 @@ const SkillsSection = () => {
   return (
     <section id="skills" className="bg-salmon">
       <h2 className="ml-[10vw]">Skills</h2>
-      <div className="mx-auto text-left text-black p-4 ">
+      <div className="mx-auto text-left text-black">
         <ScrollAnimation>
           <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 ">
             <h3 className="col-start-1 col-span-full">Languages</h3>

@@ -3,10 +3,10 @@ import ScrollAnimation from "@/components/ui/ScrollAnimation";
 const AboutSection = () => {
   return (
     <section id="about" className="bg-turq ">
-      <div className="mx-auto bg-inherit text-left text-black p-4">
+      <div className="mx-auto bg-inherit text-left text-black">
         <ScrollAnimation>
           <h2 className="ml-[10vw]">About</h2>
-          <p className="mt-4 text-black">
+          <p className=" text-black">
             Based in New Haven, CT. I'm passionate about improving systems
             through efficiency and design.
           </p>
