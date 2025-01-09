@@ -16,7 +16,7 @@ const SkillsSection = () => {
             <div className="">JavaScript</div>
             <div className="">SQL</div>
             <div className="">Ruby</div>
-            <div className="">M</div>
+            <div className="">M / Mumps</div>
           </div>
         </ScrollAnimation>
         <ScrollAnimation>
