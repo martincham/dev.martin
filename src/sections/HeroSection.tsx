@@ -3,9 +3,8 @@ const HeroSection = () => {
     <section id="hero" className="">
       <div className="mx-auto">
         <h1 className="tracking-wider  mx-auto">
-          👋
-          <br /> I'm Martin Chamberlin: <br />
-          developer, designer, and builder.
+          <br /> I'm Martin Chamberlin. <br />
+          Developer, designer, and builder.
         </h1>
         <p style={{ fontSize: "min(1.5rem, 8vw)" }} className="mx-auto">
           Data | Backend | Frontend | UI/UX | IOT

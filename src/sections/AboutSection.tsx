@@ -7,13 +7,14 @@ const AboutSection = () => {
         <ScrollAnimation>
           <h2 className="ml-[10vw]">About</h2>
           <p className=" text-black">
-            Based in New Haven, CT. I'm passionate about improving systems
-            through efficiency and design.
+            I love building and designing: robots, data tools, websites, and
+            more. I value ergonomics and efficiency.
           </p>
           <p className="mt-4 text-black">
             BA in Computer Science and Art, Grinnell College, 2019.
           </p>
           <p className="">MFA in Art, University of Georgia, 2024.</p>
+          <p> Based in New Haven, CT.</p>
           <hr className="my-4 mx-auto h-[1px] bg-black" />
           <div className="bg-inherit flex flex-wrap justify-left mt-4 font-medium ">
             <a href="https://www.linkedin.com/in/martincham/">
