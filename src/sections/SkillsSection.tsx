@@ -38,6 +38,10 @@ const SkillsSection = () => {
             <div className="">Illustrator</div>
             <div className="">InDesign</div>
             <div className="">Photoshop</div>
+            <div className="">Solidworks</div>
+            <div className="">Fusion360</div>
+            <div className="">Inventor</div>
+            <div className="">AutoCAD</div>
           </div>
         </ScrollAnimation>
       </div>
