@@ -7,7 +7,7 @@ const ContactSection = () => {
           Did you know I also have a{" "}
           <a
             className="link font-medium"
-            style={{ "font-size": "min(1rem, 5vw)" }}
+            style={{ fontSize: "min(1rem, 5vw)" }}
             href="https://martinchamberlin.com"
           >
             {" "}

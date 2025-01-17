@@ -4,9 +4,9 @@ const SkillsSection = () => {
   return (
     <section id="skills" className="bg-salmon">
       <h2 className="ml-[10vw]">Skills</h2>
-      <div className="mx-auto text-left text-black">
+      <div className="mx-auto text-left text-black space-y-6">
         <ScrollAnimation>
-          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-4 ">
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-2 ">
             <h3 className="col-start-1 col-span-full">Dev Languages</h3>
             <div className="">C#/.NET</div>
             <div className="">Python</div>
@@ -16,11 +16,11 @@ const SkillsSection = () => {
             <div className="">JavaScript</div>
             <div className="">SQL</div>
             <div className="">Ruby</div>
-            <div className="">M / Mumps</div>
+            <div className="">M/Mumps</div>
           </div>
         </ScrollAnimation>
         <ScrollAnimation>
-          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-4 ">
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-2 ">
             <h3 className="col-start-1 col-span-full">Dev Tools</h3>
             <div className="">React</div>
             <div className="">Tailwind CSS</div>
@@ -30,7 +30,7 @@ const SkillsSection = () => {
           </div>
         </ScrollAnimation>
         <ScrollAnimation>
-          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-4 ">
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-2 ">
             <h3 className="col-start-1 col-span-full">Design Tools</h3>
             <div className="">Figma</div>
             <div className="">Sketch</div>
