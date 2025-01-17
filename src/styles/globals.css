@@ -11,8 +11,10 @@
         "liga" 1,
         "calt" 1,
         "dlig" 1,
+        "case" 1,
         "ss01" 1,
-        "ss02" 1;
+        "ss02" 1,
+        "ss07" 1;
     text-color: var(--foreground-color);
 }
 @supports (font-variation-settings: normal) {

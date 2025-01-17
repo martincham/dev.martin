@@ -14,6 +14,10 @@ const ExperienceSection = () => {
             </div>
 
             <ul className="pl-4 list-disc">
+              <li>
+                C++ and electronic design and implementation for a custom
+                infrared remote
+              </li>
               <li>Building a project management tool with Ruby on Rails</li>
               <li>
                 Front-end development with React, Tailwind, and Typescript
