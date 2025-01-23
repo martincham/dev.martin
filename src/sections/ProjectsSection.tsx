@@ -1,3 +1,4 @@
+import ReactModal from "react-modal";
 import {
   Card,
   CardContent,
@@ -12,10 +13,11 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="bg-golden text-black">
       <div className="mx-auto text-left">
-        <h2 className=" ml-[10vw]">Projects</h2>
+        <h2 className="">Projects</h2>
         <div className="grid opacity-100 grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-8 pt-2">
           {/* NBA Player Analyzer */}
           <ScrollAnimation>
+            <ReactModal></ReactModal>
             <Card className="">
               <CardHeader>
                 <CardTitle>NBA Player Analyzer</CardTitle>

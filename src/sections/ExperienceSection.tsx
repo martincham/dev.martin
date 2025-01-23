@@ -2,15 +2,15 @@ import ScrollAnimation from "@/components/ui/ScrollAnimation";
 
 const ExperienceSection = () => {
   return (
-    <section id="experience" className="bg-purp">
-      <div className="mx-auto  text-left !text-black">
-        <h2 className="ml-[10vw]">Experience</h2>
+    <section id="experience" className="">
+      <div className="mx-auto  text-left ">
+        <h2 className="">Experience</h2>
         {/* Freelance */}
         <ScrollAnimation>
           <div>
             <div className="flex justify-between">
               <h3 className="">Freelance Software Engineer</h3>
-              <h3 className="">2024-Present</h3>
+              <h3 className="text-right">2024-Present</h3>
             </div>
 
             <ul className="pl-4 list-disc">
@@ -32,7 +32,7 @@ const ExperienceSection = () => {
           <div>
             <div className="flex justify-between">
               <h3 className="">Design Teacher</h3>
-              <h3 className="">2022-24</h3>
+              <h3 className="text-right">2022-24</h3>
             </div>
             <p>University of Georgia</p>
             <ul className="pl-4 list-disc">
@@ -50,11 +50,11 @@ const ExperienceSection = () => {
           <div>
             <div className="flex justify-between">
               <h3 className="">Software Engineer</h3>
-              <h3 className="">2019-21</h3>
+              <h3 className="text-right">2019-21</h3>
             </div>
             <p>
               <a
-                className="ink text-sky-700 hover:text-muted-foreground "
+                className="link  hover:text-muted-foreground "
                 href="https://cosmos.epic.com/"
               >
                 Cosmos
@@ -84,7 +84,7 @@ const ExperienceSection = () => {
           <div>
             <div className="flex justify-between">
               <h3 className="">App Designer</h3>
-              <h3 className="">2018-219</h3>
+              <h3 className="text-right">2018-219</h3>
             </div>
             <p>AppDev Grinnell</p>
             <ul className="pl-4 list-disc">

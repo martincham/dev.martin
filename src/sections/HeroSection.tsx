@@ -1,12 +1,14 @@
 const HeroSection = () => {
   return (
-    <section id="hero" className="">
-      <div className="mx-auto">
-        <h1 className="tracking-wider  mx-auto">
-          <br /> I'm Martin Chamberlin. <br />
-          Developer, designer, and builder.
+    <section id="hero" className="selection:bg-golden">
+      <div className="mx-auto mt-[20vh]">
+        <h1
+          style={{ fontSize: "max(2rem, 7vw)" }}
+          className="  mx-auto m-0 p-0 font-normal "
+        >
+          Martin is building things.
         </h1>
-        <p style={{ fontSize: "min(1.5rem, 8vw)" }} className="mx-auto">
+        <p style={{ fontSize: "max(1rem, 2vw)" }} className="textmx-auto">
           Data | Backend | Frontend | UI/UX | IOT
         </p>
       </div>
