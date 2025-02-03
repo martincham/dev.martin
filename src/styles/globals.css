@@ -18,6 +18,10 @@
         "ss08" 1;
     text-color: var(--foreground-color);
 }
+:root::selection {
+    color: black;
+    background-color: var(--golden);
+}
 @supports (font-variation-settings: normal) {
     :root {
         font-family: InterVariable, sans-serif;

@@ -12,7 +12,7 @@ import ExperienceSection from "./sections/ExperienceSection";
 function App() {
   return (
     <ThemeProvider>
-      <div className="min-h-screen mx-auto relative bg-background">
+      <div className="min-h-screen mx-auto relative bg-background selection:bg-golden selection:text-black">
         {/* <DotGrid /> */}
         <div className="mx-auto">
           <Navbar />
