@@ -19,7 +19,8 @@ const projects = [
       "Python CLI for evaluating player value. Analyzed and pushes data to Google Sheets API.",
     github: "https://github.com/martincham/espn-nba-fantasy-analyzer",
     year: "2023-24",
-    details: "More details about NBA Player Analyzer...",
+    details:
+      "This command-line tool I built in 2023 solves the problem of inaccurate player valuation. It pulls data from ESPN's API, uses Pandas to normalize each stat to it's average in the league, and pushes to Google's Sheets API. It can also find marginal improvements a based on a team's schedule. See the GitHub for more detail.",
   },
   {
     title: "Arduino Sculpture",
@@ -96,21 +97,21 @@ const ProjectsSection = () => {
       <ReactModal
         isOpen={!!selectedProject}
         onRequestClose={() => setSelectedProject(null)}
-        className="bg-white p-6 max-w-lg mx-auto rounded-lg shadow-lg mt-20 outline-none"
+        className="bg-golden text-black p-6 w-[80vw] mx-auto rounded-xl shadow-lg mt-20 border border-black"
         overlayClassName="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
       >
         {selectedProject && (
           <div>
-            <h2 className="text-xl font-bold">{selectedProject.title}</h2>
-            <p className="text-gray-600 mt-2">{selectedProject.details}</p>
+            <h2 className="text-xl ">{selectedProject.title}</h2>
+            <p className="mt-2">{selectedProject.details}</p>
             <div className="mt-4 flex justify-between">
               <a
                 href={selectedProject.github}
-                className="text-blue-500 hover:underline"
+                className="link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View on GitHub
+                GitHub -{">"}
               </a>
               <button
                 onClick={() => setSelectedProject(null)}
