@@ -3,7 +3,7 @@ import ScrollAnimation from "@/components/ui/ScrollAnimation";
 const ExperienceSection = () => {
   return (
     <section id="experience" className="">
-      <div className="mx-auto  text-left ">
+      <div className="mx-auto  text-left">
         <h2 className="">Experience</h2>
         {/* Freelance */}
         <ScrollAnimation>
@@ -24,7 +24,7 @@ const ExperienceSection = () => {
               </li>
             </ul>
           </div>
-          <hr className="my-4 mx-auto h-[1px] bg-black" />
+          <hr className="my-4 mx-auto h-[1px] border-muted" />
         </ScrollAnimation>
 
         {/* UGA */}
@@ -42,7 +42,7 @@ const ExperienceSection = () => {
               </li>
             </ul>
           </div>
-          <hr className="my-4 mx-auto h-[1px] bg-black" />
+          <hr className="my-4 mx-auto h-[1px] border-muted" />
         </ScrollAnimation>
 
         {/* Epic Systems */}
@@ -76,7 +76,7 @@ const ExperienceSection = () => {
               </li>
             </ul>
           </div>
-          <hr className="my-4 mx-auto h-[1px] bg-black" />
+          <hr className="my-4 mx-auto h-[1px] border-muted" />
         </ScrollAnimation>
 
         {/* Grinnell */}
@@ -94,7 +94,6 @@ const ExperienceSection = () => {
               </li>
             </ul>
           </div>
-          <hr className="my-4 mx-auto h-[1px] bg-black" />
         </ScrollAnimation>
       </div>
     </section>

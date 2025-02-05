@@ -11,6 +11,70 @@
   If we ever want to remove these styles, we need to add an explicit border
   color utility to any element that depends on these defaults.
 */
+@theme {
+    /* Custom Colors */
+    --color-golden: oklch(86.01% 0.2 87.2);
+    --color-turq: oklch(69.83% 0.1953 166.76);
+    --color-salmon: oklch(80.11% 0.1529 42.88);
+    --color-purp: oklch(66.85% 0.209 292.483);
+}
+@theme {
+    /* Light Theme Color */
+    --color-background: rgba(255, 255, 255);
+    --color-foreground: rgba(9, 9, 11);
+    --color-card: rgba(255, 255, 255);
+    --color-card-foreground: rgba(9, 9, 9);
+    --color-popover: rgba(255, 255, 255);
+    --color-popover-foreground: rgba(9, 9, 9);
+    --color-primary: rgba(22, 22, 22);
+    --color-primary-foreground: rgba(249, 249, 249);
+    --color-secondary: rgba(244, 244, 245);
+    --color-secondary-foreground: rgba(22, 22, 22);
+    --color-muted: rgba(245, 245, 245);
+    --color-muted-foreground: rgba(115, 115, 115);
+    --color-accent: rgba(0, 255, 255, 0.7);
+    --color-accent-foreground: rgba(22, 22, 22);
+    --color-destructive: rgba(214, 49, 49);
+    --color-destructive-foreground: rgba(249, 249, 249);
+    --color-border: rgba(0, 0, 0, 0.15);
+    --color-input: rgba(237, 237, 237);
+    --color-ring: rgba(9, 9, 9);
+    --color-chart-1: rgba(217, 85, 58);
+    --color-chart-2: rgba(69, 152, 99);
+    --color-chart-3: rgba(92, 128, 83);
+    --color-chart-4: rgba(223, 174, 106);
+    --color-chart-5: rgba(241, 96, 86);
+    --color-shadow: rgba(113, 113, 122, 0.3);
+}
+.dark {
+    /* Dark theme Colors */
+    --color-background: rgba(17, 17, 17);
+    --color-foreground: rgba(249, 249, 249);
+    --color-card: rgba(9, 9, 11);
+    --color-card-foreground: rgba(249, 249, 249);
+    --color-popover: rgba(9, 9, 11);
+    --color-popover-foreground: rgba(249, 249, 249);
+    --color-primary: rgba(249, 249, 249);
+    --color-primary-foreground: rgba(22, 22, 22);
+    --color-secondary: rgba(24, 24, 27, 0.4);
+    --color-secondary-foreground: rgba(249, 249, 249);
+    --color-muted: rgba(37, 37, 37);
+    --color-muted-foreground: rgba(162, 162, 162);
+    --color-accent: rgba(0, 255, 255, 0.3);
+    --color-accent-foreground: rgba(249, 249, 249);
+    --color-destructive: rgba(127, 29, 29);
+    --color-destructive-foreground: rgba(249, 249, 249);
+    --color-border: rgb(39 39 42);
+    --color-input: rgba(32, 32, 32);
+    --color-ring: rgba(211, 211, 211);
+    --color-chart-1: rgba(38, 97, 216);
+    --color-chart-2: rgba(45, 183, 137);
+    --color-chart-3: rgba(232, 140, 48);
+    --color-hart-4: rgba(175, 86, 219);
+    --color-chart-5: rgba(226, 54, 111);
+    --color-shadow: rgba(9, 9, 11, 0.8);
+}
+
 @layer base {
     *,
     ::after,
@@ -19,20 +83,6 @@
     ::file-selector-button {
         border-color: var(--color-gray-200, currentColor);
     }
-}
-
-@utility dot-grid {
-    background-image: radial-gradient(
-        circle,
-        rgba(255, 255, 255, 0.1) 1px,
-        transparent 1px
-    );
-    background-size: 20px 20px;
-    background-position: 0 0;
-}
-@utility animate-dot-grid {
-    /* Animation for Background Movement */
-    animation: move-grid 1s linear infinite;
 }
 
 @layer utilities {
@@ -63,10 +113,8 @@
     }
     a {
         text-decoration: none;
-        font-size: min(1.2rem, 7vw);
         font-weight: 600;
         transition: var(--transition);
-        color: var(--primary-color);
     }
     h1 {
         font-size: min(4rem, 10vw);
@@ -91,49 +139,16 @@
     }
 
     .link {
-        color: var(--turq);
+        color: var(--color-turq));
     }
 
-    .link:hover {
-        color: var(--muted-foreground);
-    }
 
-    /* Skill Bar */
-
-    .meter {
-        height: 4px;
-        max-width: 20vw;
-        position: relative;
-        background: var(--background);
-        border-radius: 4px;
-        padding: 0;
-        box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
-    }
-
-    .meter span {
-        display: block;
-        height: 100%;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        background-color: rgb(43, 194, 83);
-        background-image: linear-gradient(
-            center bottom,
-            rgb(43, 194, 83) 37%,
-            rgb(84, 240, 84) 69%
-        );
-    }
 
     :root {
         --muted-color: rgba(255, 255, 255, 0.6); /* Muted white */
         --border-color: rgba(255, 255, 255, 0.15); /* Subtle border */
         --radius-md: 8px; /* Medium rounded corners */
         --transition: all 0.2s ease-in-out; /* Smooth animations */
-
-        --serif-font: "Bodoni Moda", serif; /* Default font family */
-        --sans-font: "Space Grotesk", sans-serif; /* Default font family */
-        --mono-font: "JetBrains Mono", monospace; /* Default font family */
     }
 
     /* Base Styles */
@@ -149,116 +164,4 @@
     }
 
     /* Dot Grid */
-}
-
-@layer utilities {
-    /* Keyframes for Moving the Grid */
-    @keyframes move-grid {
-        from {
-            background-position: 0 0;
-        }
-        to {
-            background-position: 20px 20px;
-        }
-    }
-}
-
-@layer base {
-    * {
-        @apply border-border;
-    }
-    body {
-        @apply bg-background text-foreground;
-    }
-}
-
-@layer utilities {
-    /* Colors */
-    :root {
-        --golden: rgb(1, 0.784, 0);
-        --turq: rgb(0.11, 0.726, 0.532);
-        --salmon: rgb(1, 0.628, 0.454);
-        --purp: rgb(0.588, 0.459, 1);
-    }
-    /* P3 Color Versions */
-    @supports (color: color(display-p3 1 1 1)) {
-        :root {
-            --golden: color(display-p3 1 0.784 0);
-            --turq: color(display-p3 0.11 0.726 0.532);
-            --salmon: color(display-p3 1 0.628 0.454);
-            --purp: color(display-p3 0.588 0.459 1);
-        }
-    }
-
-    /* Base Colors */
-}
-@layer base {
-}
-
-@theme {
-    /* Custom Colors */
-    --color-golden: oklch(86.01% 0.2 87.2);
-    --color-turq: oklch(69.83% 0.1953 166.76);
-    --color-salmon: oklch(80.11% 0.1529 42.88);
-    --color-purp: oklch(66.85% 0.209 292.483);
-}
-.light {
-    @theme {
-        /* Light Theme Color */
-        --color-background: rgba(255, 255, 255);
-        --color-foreground: rgba(9, 9, 11);
-        --color-card: rgba(255, 255, 255);
-        --color-card-foreground: rgba(9, 9, 9);
-        --color-popover: rgba(255, 255, 255);
-        --color-popover-foreground: rgba(9, 9, 9);
-        --color-primary: rgba(22, 22, 22);
-        --color-primary-foreground: rgba(249, 249, 249);
-        --color-secondary: rgba(244, 244, 245);
-        --color-secondary-foreground: rgba(22, 22, 22);
-        --color-muted: rgba(245, 245, 245);
-        --color-muted-foreground: rgba(115, 115, 115);
-        --color-accent: rgba(0, 255, 255, 0.7);
-        --color-accent-foreground: rgba(22, 22, 22);
-        --color-destructive: rgba(214, 49, 49);
-        --color-destructive-foreground: rgba(249, 249, 249);
-        --color-border: rgba(0, 0, 0, 0.15);
-        --color-input: rgba(237, 237, 237);
-        --color-ring: rgba(9, 9, 9);
-        --color-chart-1: rgba(217, 85, 58);
-        --color-chart-2: rgba(69, 152, 99);
-        --color-chart-3: rgba(92, 128, 83);
-        --color-chart-4: rgba(223, 174, 106);
-        --color-chart-5: rgba(241, 96, 86);
-        --radius: 0.5rem;
-        --color-shadow: rgba(113, 113, 122, 0.3);
-    }
-}
-
-@theme (.dark) {
-    /* Dark theme Colors */
-    --color-background: rgba(17, 17, 17);
-    --color-foreground: rgba(249, 249, 249);
-    --color-card: rgba(9, 9, 11);
-    --color-card-foreground: rgba(249, 249, 249);
-    --color-popover: rgba(9, 9, 11);
-    --color-popover-foreground: rgba(249, 249, 249);
-    --color-primary: rgba(249, 249, 249);
-    --color-primary-foreground: rgba(22, 22, 22);
-    --color-secondary: rgba(24, 24, 27, 0.4);
-    --color-secondary-foreground: rgba(249, 249, 249);
-    --color-muted: rgba(37, 37, 37);
-    --color-muted-foreground: rgba(162, 162, 162);
-    --color-accent: rgba(0, 255, 255, 0.3);
-    --color-accent-foreground: rgba(249, 249, 249);
-    --color-destructive: rgba(127, 29, 29);
-    --color-destructive-foreground: rgba(249, 249, 249);
-    --color-border: rgb(39 39 42);
-    --color-input: rgba(32, 32, 32);
-    --color-ring: rgba(211, 211, 211);
-    --color-chart-1: rgba(38, 97, 216);
-    --color-chart-2: rgba(45, 183, 137);
-    --color-chart-3: rgba(232, 140, 48);
-    --color-hart-4: rgba(175, 86, 219);
-    --color-chart-5: rgba(226, 54, 111);
-    --color-shadow: rgba(9, 9, 11, 0.8);
 }

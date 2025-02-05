@@ -1,51 +1,35 @@
 const Navbar = () => {
   return (
-    <nav
-      style={{ fontSize: "min(1rem, 5vw)" }}
-      className="font-medium z-50 sticky top-0 pb-1 backdrop-blur-md bg-background  min-w-full max-w-3xl border-b border-muted-foreground"
-    >
-      <ul className="flex flex-wrap justify-around   text-foreground transition-colors duration-200">
-        {/* <li className=" text-center hover:translate-y-[1px] duration-150">
-          <a
-            href="#hero"
-            className="block py-2 px-1 sm:px-4 hover:text-muted-foreground  "
-          >
-            Home
-          </a>
-        </li> */}
-        <li className=" text-center hover:translate-y-[1px] duration-150">
-          <a
-            href="#about"
-            className="block py-2 px-1 sm:px-4 hover:text-turq   "
-          >
-            About
-          </a>
-        </li>
-        <li className=" text-center hover:translate-y-[1px] duration-150">
-          <a
-            href="#projects"
-            className="block py-2 px-1 sm:px-4  hover:text-golden   "
-          >
-            Projects
-          </a>
-        </li>
-        <li className=" text-center hover:translate-y-[1px] duration-150">
-          <a
-            href="#experience"
-            className="block py-2 px-1 sm:px-4 hover:text-purp   "
-          >
-            Experience
-          </a>
-        </li>
-        <li className=" text-center hover:translate-y-[1px] duration-150">
-          <a
-            href="#skills"
-            className="block py-2 px-1 sm:px-4 hover:text-salmon   "
-          >
-            Skills
-          </a>
-        </li>
-      </ul>
+    <nav className=" z-50 sticky top-0 bg-background  min-w-full max-w-3xl border-b border-muted">
+      <div className="flex flex-wrap  content-stretch  transition-colors duration-200">
+        <a
+          href="#about"
+          className="grow text-md font-regular  block py-2 px-1 sm:px-4 hover:text-turq text-center hover:translate-y-[1px] duration-150 border-r box-border border-muted"
+        >
+          About
+        </a>
+
+        <a
+          href="#projects"
+          className="grow text-md font-regular  block py-2 px-1 sm:px-4  hover:text-golden text-center hover:translate-y-[1px] duration-150 border-r box-border border-muted"
+        >
+          Projects
+        </a>
+
+        <a
+          href="#experience"
+          className="grow text-md font-regular block py-2 px-1 sm:px-4 hover:text-purp text-center hover:translate-y-[1px] duration-150 border-r box-border border-muted"
+        >
+          Experience
+        </a>
+
+        <a
+          href="#skills"
+          className="grow text-md font-regular block py-2 px-1 sm:px-4 hover:text-salmon text-center hover:translate-y-[1px] duration-150 box-border border-muted"
+        >
+          Skills
+        </a>
+      </div>
     </nav>
   );
 };

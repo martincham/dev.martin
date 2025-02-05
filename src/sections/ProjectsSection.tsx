@@ -98,7 +98,7 @@ const ProjectsSection = () => {
         isOpen={!!selectedProject}
         onRequestClose={() => setSelectedProject(null)}
         className="bg-golden text-black p-6 w-[80vw] mx-auto rounded-xl shadow-lg mt-20 border border-black"
-        overlayClassName="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
+        overlayClassName="fixed inset-0 bg-shadow  flex justify-center items-center"
       >
         {selectedProject && (
           <div>
