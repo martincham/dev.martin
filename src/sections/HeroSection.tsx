@@ -6,7 +6,7 @@ const HeroSection = () => {
           style={{ fontSize: "max(2rem, 6.8vw)" }}
           className="  mx-auto m-0 p-0 font-normal "
         >
-          Martin is building software.
+          Martin is optimizing.
         </h1>
         <p style={{ fontSize: "max(1rem, 2vw)" }} className="textmx-auto">
           Data | Backend | Frontend | UI/UX | IOT

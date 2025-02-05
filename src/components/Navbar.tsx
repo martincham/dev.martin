@@ -2,7 +2,7 @@ const Navbar = () => {
   return (
     <nav
       style={{ fontSize: "min(1rem, 5vw)" }}
-      className="font-medium z-50 sticky top-0 pb-1 backdrop-blur-md bg-background  min-w-full max-w-3xl"
+      className="font-medium z-50 sticky top-0 pb-1 backdrop-blur-md bg-background  min-w-full max-w-3xl border-b border-muted-foreground"
     >
       <ul className="flex flex-wrap justify-around   text-foreground transition-colors duration-200">
         {/* <li className=" text-center hover:translate-y-[1px] duration-150">
