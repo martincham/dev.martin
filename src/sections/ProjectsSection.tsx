@@ -76,7 +76,7 @@ const ProjectsSection = () => {
           {projects.map((project, index) => (
             <ScrollAnimation key={index}>
               <Card
-                className="cursor-pointer hover:shadow-lg transition-shadow"
+                className="cursor-pointer hover:shadow-lg hover:scale-102 transition-all"
                 onClick={() => setSelectedProject(project)}
               >
                 <CardHeader>
@@ -85,14 +85,7 @@ const ProjectsSection = () => {
                 </CardHeader>
                 <CardContent></CardContent>
                 <CardFooter className="justify-between">
-                  <a
-                    href={project.github}
-                    className="link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub -{">"}
-                  </a>
+                  <p></p>
                   <p className="text-black">{project.year}</p>
                 </CardFooter>
               </Card>
@@ -115,7 +108,7 @@ const ProjectsSection = () => {
             <div className="mt-4 flex justify-between">
               <a
                 href={selectedProject.github}
-                className="link"
+                className="text-turq hover:text-muted-foreground"
                 target="_blank"
                 rel="noopener noreferrer"
               >

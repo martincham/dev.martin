@@ -1,48 +1,64 @@
 import ScrollAnimation from "@/components/ui/ScrollAnimation";
 
+const skills = [
+  {
+    title: "Dev Languages",
+    items: [
+      "C#/.NET",
+      "Python",
+      "C++",
+      "Java",
+      "TypeScript",
+      "JavaScript",
+      "SQL",
+      "Ruby",
+      "M/Mumps",
+    ],
+  },
+  {
+    title: "Dev Tools",
+    items: ["React", "Tailwind", "Git", "Jira", "Pandas"],
+  },
+  {
+    title: "Design Tools",
+    items: [
+      "Figma",
+      "Sketch",
+      "Affinity",
+      "Illustrator",
+      "InDesign",
+      "Photoshop",
+      "Solidworks",
+      "Fusion360",
+      "Inventor",
+      "AutoCAD",
+    ],
+  },
+];
+
 const SkillsSection = () => {
   return (
-    <section id="skills" className="border-t border-b border-border">
+    <section id="skills" className="border-y border-muted">
       <h2 className="">Skills</h2>
       <div className="mx-auto text-left space-y-6">
         <ScrollAnimation>
-          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-2 ">
-            <h3 className="col-start-1 col-span-full">Dev Languages</h3>
-            <div className="">C#/.NET</div>
-            <div className="">Python</div>
-            <div className="">C++</div>
-            <div className="">Java</div>
-            <div className="">TypeScript</div>
-            <div className="">JavaScript</div>
-            <div className="">SQL</div>
-            <div className="">Ruby</div>
-            <div className="">M/Mumps</div>
-          </div>
-        </ScrollAnimation>
-        <ScrollAnimation>
-          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-2 ">
-            <h3 className="col-start-1 col-span-full">Dev Tools</h3>
-            <div className="">React</div>
-            <div className="">Tailwind</div>
-            <div className="">Git</div>
-            <div className="">Jira</div>
-            <div className="">Pandas</div>
-          </div>
-        </ScrollAnimation>
-        <ScrollAnimation>
-          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-2 ">
-            <h3 className="col-start-1 col-span-full">Design Tools</h3>
-            <div className="">Figma</div>
-            <div className="">Sketch</div>
-            <div className="">Affinity</div>
-            <div className="">Illustrator</div>
-            <div className="">InDesign</div>
-            <div className="">Photoshop</div>
-            <div className="">Solidworks</div>
-            <div className="">Fusion360</div>
-            <div className="">Inventor</div>
-            <div className="">AutoCAD</div>
-          </div>
+          {skills.map((skillCategory, index) => (
+            <div key={index}>
+              <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-2">
+                <h3 className="col-start-1 col-span-full">
+                  {skillCategory.title}
+                </h3>
+                {skillCategory.items.map((skill, skillIndex) => (
+                  <div key={skillIndex} className="">
+                    {skill}
+                  </div>
+                ))}
+              </div>
+              {index < skills.length - 1 && (
+                <hr className="my-4 mx-auto h-[1px] border-muted" />
+              )}
+            </div>
+          ))}
         </ScrollAnimation>
       </div>
     </section>

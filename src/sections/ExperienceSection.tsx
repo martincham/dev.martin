@@ -60,7 +60,9 @@ const ExperienceSection = () => {
                 ))}
               </ul>
             </div>
-            <hr className="my-4 mx-auto h-[1px] border-muted" />
+            {index < resume.length - 1 && (
+              <hr className="my-4 mx-auto h-[1px] border-muted" />
+            )}
           </ScrollAnimation>
         ))}
       </div>

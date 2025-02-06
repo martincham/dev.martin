@@ -17,13 +17,19 @@ const AboutSection = () => {
           <hr className="my-4 mx-auto h-[1px] border-muted" />
           <div className="bg-inherit flex flex-wrap justify-left mt-4 font-medium ">
             <a href="https://www.linkedin.com/in/martincham/">
-              <div className="px-2 link">LinkedIn</div>
+              <div className="px-2 text-turq hover:text-muted-foreground">
+                LinkedIn
+              </div>
             </a>
             <a href="https://github.com/martincham">
-              <div className="border-l border-muted px-2 link ">GitHub</div>
+              <div className="border-l border-muted px-2 text-turq hover:text-muted-foreground">
+                GitHub
+              </div>
             </a>
             <a href="/MartinChamberlinResume.pdf">
-              <div className="border-l border-muted px-2 link ">Resume</div>
+              <div className="border-l border-muted px-2 text-turq hover:text-muted-foreground ">
+                Resume
+              </div>
             </a>
           </div>
         </ScrollAnimation>
