@@ -4,7 +4,7 @@ const Navbar = () => {
       <div className="flex flex-wrap  content-stretch  transition-colors duration-200">
         <a
           href="#about"
-          className="grow text-md font-regular  block py-2 px-1 sm:px-4 hover:text-turq text-center hover:translate-y-[1px] duration-150 border-r box-border border-muted"
+          className="grow text-md font-regular  block py-2 px-1 sm:px-4 hover:text-golden text-center hover:translate-y-[1px] duration-150 border-r box-border border-muted"
         >
           About
         </a>
@@ -18,14 +18,14 @@ const Navbar = () => {
 
         <a
           href="#experience"
-          className="grow text-md font-regular block py-2 px-1 sm:px-4 hover:text-purp text-center hover:translate-y-[1px] duration-150 border-r box-border border-muted"
+          className="grow text-md font-regular block py-2 px-1 sm:px-4 hover:text-golden text-center hover:translate-y-[1px] duration-150 border-r box-border border-muted"
         >
           Experience
         </a>
 
         <a
           href="#skills"
-          className="grow text-md font-regular block py-2 px-1 sm:px-4 hover:text-salmon text-center hover:translate-y-[1px] duration-150 box-border border-muted"
+          className="grow text-md font-regular block py-2 px-1 sm:px-4 hover:text-golden text-center hover:translate-y-[1px] duration-150 box-border border-muted"
         >
           Skills
         </a>

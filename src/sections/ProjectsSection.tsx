@@ -12,6 +12,14 @@ import ScrollAnimation from "@/components/ui/ScrollAnimation";
 
 ReactModal.setAppElement("#root"); // Set root element for accessibility
 
+type Project = {
+  title: string;
+  description: string;
+  details: string;
+  github: string;
+  year: string;
+};
+
 const projects = [
   {
     title: "NBA Player Analyzer",
@@ -55,7 +63,7 @@ const projects = [
 ];
 
 const ProjectsSection = () => {
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
     <section
@@ -63,7 +71,7 @@ const ProjectsSection = () => {
       className="bg-golden text-black selection:bg-black selection:text-golden"
     >
       <div className="mx-auto text-left">
-        <h2 className="text-2xl font-bold">Projects</h2>
+        <h2 className="">Projects</h2>
         <div className="grid opacity-100 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 pt-2">
           {projects.map((project, index) => (
             <ScrollAnimation key={index}>
