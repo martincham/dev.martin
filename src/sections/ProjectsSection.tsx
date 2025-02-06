@@ -36,21 +36,21 @@ const projects = [
       "A wirelessly communicating sculpture installation made with C++ and robotics.",
     github: "https://github.com/martincham/hubris",
     year: "2024",
-    details: "More details about Arduino Sculpture...",
+    details: "Website in progress. Come back later!",
   },
   {
     title: "Developer Portfolio",
     description: "Built with React.js, Tailwind CSS.",
     github: "https://github.com/martincham/martincham.github.io",
     year: "2024",
-    details: "More details about Developer Portfolio...",
+    details: "Website in progress. Come back later!",
   },
   {
     title: "Art Portfolio Website",
     description: "Built with React.js, Tailwind CSS.",
     github: "https://github.com/martincham/martincham.github.io",
     year: "2024",
-    details: "More details about Art Portfolio Website...",
+    details: "Website in progress. Come back later!",
   },
   {
     title: "Machine Learning Parts Catalog",
@@ -58,7 +58,7 @@ const projects = [
       "Art projects using Machine Learning to create a catalog of useless parts.",
     github: "https://github.com/martincham/mcMasterImageMosaic",
     year: "2021",
-    details: "More details about ML Parts Catalog...",
+    details: "Website in progress. Come back later!",
   },
 ];
 
