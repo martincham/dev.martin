@@ -2,7 +2,7 @@ import ScrollAnimation from "@/components/ui/ScrollAnimation";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="border-t border-border">
+    <section id="about" className="border-t border-muted">
       <div className="mx-auto bg-inherit text-left pt-8">
         <ScrollAnimation>
           <p className="">
