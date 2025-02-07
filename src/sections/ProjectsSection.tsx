@@ -36,21 +36,23 @@ const projects = [
       "A wirelessly communicating sculpture installation made with C++ and robotics.",
     github: "https://github.com/martincham/hubris",
     year: "2024",
-    details: "Website in progress. Come back later!",
+    details: "See GitHub for photos and videos of the sculpture.",
   },
   {
     title: "Developer Portfolio",
     description: "Built with React.js, Tailwind CSS.",
     github: "https://github.com/martincham/martincham.github.io",
     year: "2024",
-    details: "Website in progress. Come back later!",
+    details:
+      "This website. Made to be simple. Currently built with Vite, React, Typescript, Tailwind.",
   },
   {
     title: "Art Portfolio Website",
     description: "Built with React.js, Tailwind CSS.",
     github: "https://github.com/martincham/martincham.github.io",
     year: "2024",
-    details: "Website in progress. Come back later!",
+    details:
+      "A website for documenting all my art projects. Built with React and Tailwind.",
   },
   {
     title: "Machine Learning Parts Catalog",
@@ -58,7 +60,8 @@ const projects = [
       "Art projects using Machine Learning to create a catalog of useless parts.",
     github: "https://github.com/martincham/mcMasterImageMosaic",
     year: "2021",
-    details: "Website in progress. Come back later!",
+    details:
+      "A AI project using TensorFlow and StyleGAN2 on University of Georgia supercomputer server.",
   },
 ];
 
@@ -102,7 +105,7 @@ const ProjectsSection = () => {
         overlayClassName="fixed inset-0 bg-shadow  flex justify-center items-center"
       >
         {selectedProject && (
-          <div className="selection:bg-black selection:text-golden">
+          <div className="selection:bg-shadow selection:text-golden">
             <h2 className="text-xl ">{selectedProject.title}</h2>
             <p className="mt-2">{selectedProject.details}</p>
             <div className="mt-4 flex justify-between items-center">
