@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/card";
 import ScrollAnimation from "@/components/ui/ScrollAnimation";
 
-ReactModal.setAppElement("#root"); // Set root element for accessibility
+ReactModal.setAppElement("#root");
 
 type Project = {
   title: string;

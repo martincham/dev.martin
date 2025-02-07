@@ -11,14 +11,13 @@ type ThemeProviderState = {
 };
 
 const initialState: ThemeProviderState = {
-  theme: "light", // Default value (won't matter since system will override)
+  theme: "light",
 };
 
 const ThemeProviderContext = createContext<ThemeProviderState>(initialState);
 
 export function ThemeProvider({ children }: ThemeProviderProps) {
   const [theme, setTheme] = useState<Theme>(() => {
-    // Detect system theme on initial render
     return window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
       : "light";
@@ -33,11 +32,9 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
       root.classList.add(newTheme);
     };
 
-    // Apply the initial theme
     root.classList.remove("light", "dark");
     root.classList.add(theme);
 
-    // Listen for system theme changes
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
     mediaQuery.addEventListener("change", updateTheme);
 
