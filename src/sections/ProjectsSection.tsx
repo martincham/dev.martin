@@ -68,7 +68,7 @@ const ProjectsSection = () => {
   return (
     <section
       id="projects"
-      className="bg-golden text-black selection:bg-black selection:text-golden"
+      className="bg-golden text-black selection:bg-shadow selection:text-golden"
     >
       <div className="mx-auto text-left">
         <h2 className="">Projects</h2>
@@ -102,10 +102,10 @@ const ProjectsSection = () => {
         overlayClassName="fixed inset-0 bg-shadow  flex justify-center items-center"
       >
         {selectedProject && (
-          <div>
+          <div className="selection:bg-black selection:text-golden">
             <h2 className="text-xl ">{selectedProject.title}</h2>
             <p className="mt-2">{selectedProject.details}</p>
-            <div className="mt-4 flex justify-between">
+            <div className="mt-4 flex justify-between items-center">
               <a
                 href={selectedProject.github}
                 className="text-turq hover:text-muted-foreground"
@@ -116,7 +116,7 @@ const ProjectsSection = () => {
               </a>
               <button
                 onClick={() => setSelectedProject(null)}
-                className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600"
+                className="px-4 py-2 border-black border  rounded-md hover:bg-red-500/50 hover:cursor-pointer hover:shadow-lg hover:scale-102"
               >
                 Close
               </button>
