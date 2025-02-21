@@ -96,7 +96,7 @@ const chartConfig = {
 
 export const description = "A stacked bar chart with NBA player stats";
 
-export function NbaChart() {
+const NbaChart = () => {
   return (
     <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
       <BarChart accessibilityLayer data={chartData}>
@@ -188,4 +188,6 @@ export function NbaChart() {
       </BarChart>
     </ChartContainer>
   );
-}
+};
+
+export default NbaChart;
