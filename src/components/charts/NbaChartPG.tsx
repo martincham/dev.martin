@@ -70,27 +70,27 @@ const chartData = [
 const chartConfig = {
   points: {
     label: "Points",
-    color: "hsl(var(--chart-1))",
+    color: "var(--color-chart-1)",
   },
   rebounds: {
     label: "Rebounds",
-    color: "hsl(var(--chart-2))",
+    color: "var(--color-chart-2)",
   },
   assists: {
     label: "Assists",
-    color: "hsl(var(--chart-3))",
+    color: "var(--color-chart-3)",
   },
   steals: {
     label: "Steals",
-    color: "hsl(var(--chart-4))",
+    color: "var(--color-chart-4)",
   },
   blocks: {
     label: "Blocks",
-    color: "hsl(var(--chart-5))",
+    color: "var(--color-chart-5)",
   },
   threes: {
     label: "Threes",
-    color: "hsl(var(--chart-6))",
+    color: "var(--color-chart-6)",
   },
 } satisfies ChartConfig;
 

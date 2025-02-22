@@ -39,11 +39,12 @@
     --color-border: oklch(0.00% 0.0000 0.00 / 0.15);
     --color-input: oklch(92.94% 0.0000 0.00);
     --color-ring: oklch(3.53% 0.0000 0.00);
-    --color-chart-1: oklch(58.43% 0.3000 20.00);
-    --color-chart-2: oklch(66.67% 0.3000 140.00);
-    --color-chart-3: oklch(43.92% 0.3000 120.00);
-    --color-chart-4: oklch(76.86% 0.3000 80.00);
-    --color-chart-5: oklch(65.88% 0.3000 10.00);
+    --color-chart-1: oklch(44.67% 0.1892 256.96);
+    --color-chart-2: var(--color-turq);
+    --color-chart-3: oklch(67.79% 0.2054 42.88);
+    --color-chart-4: var(--color-purp);
+    --color-chart-5: oklch(57.21% 0.2171 347.82);
+    --color-chart-6: oklch(57.98% 0.131 197.47);
     --color-shadow: oklch(44.31% 0.0000 240.00 / 0.3);
 }
 
@@ -68,11 +69,12 @@
     --color-border: oklch(16.08% 0.0000 240.00);
     --color-input: oklch(12.55% 0.0000 0.00);
     --color-ring: oklch(82.75% 0.0000 0.00);
-    --color-chart-1: oklch(42.35% 0.3000 240.00);
-    --color-chart-2: oklch(58.63% 0.3000 150.00);
-    --color-chart-3: oklch(74.12% 0.3000 50.00);
-    --color-chart-4: oklch(61.37% 0.3000 280.00);
-    --color-chart-5: oklch(50.59% 0.3000 350.00);
+    --color-chart-1: oklch(44.67% 0.1892 256.96);
+    --color-chart-2: var(--color-turq);
+    --color-chart-3: oklch(67.79% 0.2054 42.88);
+    --color-chart-4: var(--color-purp);
+    --color-chart-5: oklch(57.21% 0.2171 347.82);
+    --color-chart-6: oklch(57.98% 0.131 197.47);
     --color-shadow: oklch(3.92% 0.0300 240.00 / 0.8);
 }
 

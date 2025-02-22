@@ -10,6 +10,9 @@ import {
 } from "@/components/ui/card";
 import ScrollAnimation from "@/components/ui/ScrollAnimation";
 
+import NbaChart from "@/components/charts/NbaChart";
+import NbaChartPG from "@/components/charts/NbaChartPG";
+
 ReactModal.setAppElement("#root");
 
 type Project = {
@@ -18,6 +21,7 @@ type Project = {
   details: string;
   github: string;
   year: string;
+  extra?: React.ComponentType[];
 };
 
 const projects = [
@@ -29,6 +33,7 @@ const projects = [
     year: "2023-24",
     details:
       "This command-line tool I built in 2023 solves the problem of inaccurate player valuation. It pulls data from ESPN's API, uses Pandas to normalize each stat to it's average in the league, and pushes to Google's Sheets API. It can also find marginal improvements a based on a team's schedule. See the GitHub for more detail.",
+    extra: [NbaChart, NbaChartPG],
   },
   {
     title: "Arduino Sculpture",
@@ -101,13 +106,21 @@ const ProjectsSection = () => {
       <ReactModal
         isOpen={!!selectedProject}
         onRequestClose={() => setSelectedProject(null)}
-        className="bg-golden text-black p-6 w-[80vw] mx-auto rounded-xl shadow-lg mt-20 border border-black"
+        className="bg-black text-golden p-6 w-[80vw] mx-auto rounded-xl shadow-lg mt-20 border border-golden"
         overlayClassName="fixed inset-0 bg-shadow  flex justify-center items-center"
       >
         {selectedProject && (
           <div className="selection:bg-shadow selection:text-golden">
             <h2 className="text-xl ">{selectedProject.title}</h2>
             <p className="mt-2">{selectedProject.details}</p>
+            <div className="justify-center grid md:grid-cols-2 max-w-md">
+              {selectedProject.extra &&
+                selectedProject.extra.map((Extra, jindex) => (
+                  <div key={jindex} className="">
+                    <Extra />
+                  </div>
+                ))}
+            </div>
             <div className="mt-4 flex justify-between items-center">
               <a
                 href={selectedProject.github}

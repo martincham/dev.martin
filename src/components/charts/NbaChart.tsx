@@ -70,27 +70,27 @@ const chartData = [
 const chartConfig = {
   points: {
     label: "Points",
-    color: "hsl(var(--chart-1))",
+    color: "var(--color-chart-1)",
   },
   rebounds: {
     label: "Rebounds",
-    color: "hsl(var(--chart-2))",
+    color: "var(--color-chart-2)",
   },
   assists: {
     label: "Assists",
-    color: "hsl(var(--chart-3))",
+    color: "var(--color-chart-3)",
   },
   steals: {
     label: "Steals",
-    color: "hsl(var(--chart-4))",
+    color: "var(--color-chart-4)",
   },
   blocks: {
     label: "Blocks",
-    color: "hsl(var(--chart-5))",
+    color: "var(--color-chart-5)",
   },
   threes: {
     label: "Threes",
-    color: "hsl(var(--chart-6))",
+    color: "var(--color-chart-6)",
   },
 } satisfies ChartConfig;
 
@@ -151,37 +151,37 @@ const NbaChart = () => {
         <ChartLegend content={<ChartLegendContent />} />
         <Bar
           dataKey="points"
-          fill="var(--color-points)"
+          fill="var(--color-chart-1)"
           stackId="a"
           radius={[0, 0, 4, 4]}
         />
         <Bar
           dataKey="rebounds"
-          fill="var(--color-rebounds)"
+          fill="var( --color-chart-2)"
           stackId="a"
           radius={[0, 0, 0, 0]}
         />
         <Bar
           dataKey="assists"
-          fill="var(--color-assists)"
+          fill="var( --color-chart-3)"
           stackId="a"
           radius={[0, 0, 0, 0]}
         />
         <Bar
           dataKey="steals"
-          fill="var(--color-steals)"
+          fill="var( --color-chart-4)"
           stackId="a"
           radius={[0, 0, 0, 0]}
         />
         <Bar
           dataKey="blocks"
-          fill="var(--color-blocks)"
+          fill="var( --color-chart-5)"
           stackId="a"
           radius={[0, 0, 0, 0]}
         />
         <Bar
           dataKey="threes"
-          fill="var(--color-threes)"
+          fill="var( --color-chart-6)"
           stackId="a"
           radius={[4, 4, 0, 0]}
         />
