@@ -113,7 +113,7 @@ const ProjectsSection = () => {
           <div className="selection:bg-shadow selection:text-golden">
             <h2 className="text-xl ">{selectedProject.title}</h2>
             <p className="mt-2">{selectedProject.details}</p>
-            <div className="justify-center grid md:grid-cols-2 max-w-md">
+            <div className="justify-center grid ">
               {selectedProject.extra &&
                 selectedProject.extra.map((Extra, jindex) => (
                   <div key={jindex} className="">
