@@ -106,17 +106,30 @@ const ProjectsSection = () => {
       <ReactModal
         isOpen={!!selectedProject}
         onRequestClose={() => setSelectedProject(null)}
-        className="bg-black text-golden p-6 w-[80vw] mx-auto rounded-xl shadow-lg mt-20 border border-golden"
+        className="bg-black text-golden p-6 w-[80vw] mx-auto rounded-xl shadow-lg mt-20 border border-golden focus:outline-none"
         overlayClassName="fixed inset-0 bg-shadow  flex justify-center items-center"
       >
         {selectedProject && (
           <div className="selection:bg-shadow selection:text-golden">
-            <h2 className="text-xl ">{selectedProject.title}</h2>
+            <button
+              onClick={() => setSelectedProject(null)}
+              className="group  text-golden text-4xl float-right  hover:cursor-pointer hover:-white"
+            >
+              <div className="p-1 pb-2 object-contain">
+                <span className="block w-5 h-0.5 bg-golden  group-hover:bg-muted-foreground rotate-45 translate-y-1.5"></span>
+
+                <span className="block w-5 h-0.5 bg-golden mb-3 group-hover:bg-muted-foreground -rotate-45 translate-y-1"></span>
+              </div>
+            </button>
+
+            <h2 className="text-xl display-inline ">{selectedProject.title}</h2>
+
             <p className="mt-2">{selectedProject.details}</p>
-            <div className="justify-center grid ">
+            <div className="justify-center flex flex-wrap gap-4 w-full">
+              {/* Charts */}
               {selectedProject.extra &&
                 selectedProject.extra.map((Extra, jindex) => (
-                  <div key={jindex} className="">
+                  <div key={jindex} className="flex-1 max-w-sm">
                     <Extra />
                   </div>
                 ))}
@@ -130,12 +143,6 @@ const ProjectsSection = () => {
               >
                 GitHub -{">"}
               </a>
-              <button
-                onClick={() => setSelectedProject(null)}
-                className="px-4 py-2 border-black border  rounded-md hover:bg-red-500/50 hover:cursor-pointer hover:shadow-lg hover:scale-102"
-              >
-                Close
-              </button>
             </div>
           </div>
         )}
