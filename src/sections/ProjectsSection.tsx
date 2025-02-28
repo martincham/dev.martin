@@ -10,8 +10,8 @@ import {
 } from "@/components/ui/card";
 import ScrollAnimation from "@/components/ui/ScrollAnimation";
 
-import NbaChart from "@/components/charts/NbaChart";
-import NbaChartPG from "@/components/charts/NbaChartPG";
+// import NbaChart from "@/components/charts/NbaChart";
+// import NbaChartPG from "@/components/charts/NbaChartPG";
 
 ReactModal.setAppElement("#root");
 
@@ -33,7 +33,7 @@ const projects = [
     year: "2023-24",
     details:
       "This command-line tool I built in 2023 solves the problem of inaccurate player valuation. It pulls data from ESPN's API, uses Pandas to normalize each stat to it's average in the league, and pushes to Google's Sheets API. It can also find marginal improvements a based on a team's schedule. See the GitHub for more detail.",
-    extra: [NbaChart, NbaChartPG],
+    // extra: [NbaChart, NbaChartPG],
   },
   {
     title: "Arduino Sculpture",
@@ -106,23 +106,27 @@ const ProjectsSection = () => {
       <ReactModal
         isOpen={!!selectedProject}
         onRequestClose={() => setSelectedProject(null)}
-        className="overflow-y-scroll bg-background text-foreground p-6 w-[80vw] mx-auto rounded-xl shadow-lg mt-20 border border-golden focus:outline-none "
+        className="overflow-y-scroll bg-golden text-black p-6 max-w-[80vw] mx-auto rounded-xl shadow-lg mt-20 border border-black focus:outline-none "
         overlayClassName="fixed inset-0 bg-shadow  flex justify-center items-center"
       >
         {selectedProject && (
           <div className="selection:bg-shadow selection:text-golden ">
-            <button
-              onClick={() => setSelectedProject(null)}
-              className="group  text-golden text-4xl float-right  hover:cursor-pointer hover:-white"
-            >
-              <div className="p-2 pb-2 object-contain">
-                <span className="block w-5 h-0.5 bg-black  group-hover:bg-muted rotate-45 translate-y-1.5"></span>
+            <div className="float justify-between mb-8">
+              {/* Close Button */}
+              <button
+                onClick={() => setSelectedProject(null)}
+                className="group  text-golden text-4xl float-right  hover:cursor-pointer hover:-white"
+              >
+                <div className="p-2 pb-2 object-contain">
+                  <span className="block w-5 h-0.5 bg-black  group-hover:bg-muted rotate-45 translate-y-1.5"></span>
 
-                <span className="block w-5 h-0.5 bg-black mb-3 group-hover:bg-muted -rotate-45 translate-y-1"></span>
-              </div>
-            </button>
-
-            <h2 className="text-xl display-inline ">{selectedProject.title}</h2>
+                  <span className="block w-5 h-0.5 bg-black mb-3 group-hover:bg-muted -rotate-45 translate-y-1"></span>
+                </div>
+              </button>
+              <h2 className="text-xl display-inline py-0 ">
+                {selectedProject.title}
+              </h2>
+            </div>
 
             <p className="mt-2">{selectedProject.details}</p>
             <div className="">
