@@ -12,156 +12,156 @@
   color utility to any element that depends on these defaults.
 */
 @theme {
-    /* Custom Colors */
-    --color-golden: oklch(86.01% 0.2 87.2);
-    --color-turq: oklch(69.83% 0.1953 166.76);
-    --color-salmon: oklch(80.11% 0.1529 42.88);
-    --color-purp: oklch(66.85% 0.209 292.483);
+  --breakpoint-xxs: 24rem;
+  --breakpoint-xs: 30rem;
+  /* Custom Colors */
+  --color-golden: oklch(86.01% 0.2 87.2);
+  --color-turq: oklch(69.83% 0.1953 166.76);
+  --color-salmon: oklch(80.11% 0.1529 42.88);
+  --color-purp: oklch(66.85% 0.209 292.483);
 }
 @theme {
-    /* Light Theme Colors */
-    --color-background: oklch(99.27% 0.00363 107.04);
-    --color-foreground: oklch(3.92% 0.0300 240.00);
-    --color-card: oklch(100.00% 0.0000 0.00);
-    --color-card-foreground: oklch(3.53% 0.0000 0.00);
-    --color-popover: oklch(100.00% 0.0000 0.00);
-    --color-popover-foreground: oklch(3.53% 0.0000 0.00);
-    --color-primary: oklch(8.24% 0.0000 0.00);
-    --color-primary-foreground: oklch(98.04% 0.0000 0.00);
-    --color-secondary: oklch(95.69% 0.0000 0.00);
-    --color-secondary-foreground: oklch(8.24% 0.0000 0.00);
-    --color-muted: oklch(80% 0.0000 0.00);
-    --color-muted-foreground: oklch(45.10% 0.0000 0.00);
-    --color-accent: oklch(87.06% 0.3000 195.00 / 0.7);
-    --color-accent-foreground: oklch(8.24% 0.0000 0.00);
-    --color-destructive: oklch(53.33% 0.3000 20.00);
-    --color-destructive-foreground: oklch(98.04% 0.0000 0.00);
-    --color-border: oklch(0.00% 0.0000 0.00 / 0.15);
-    --color-input: oklch(92.94% 0.0000 0.00);
-    --color-ring: oklch(3.53% 0.0000 0.00);
-    --color-chart-1: oklch(44.67% 0.1892 256.96);
-    --color-chart-2: var(--color-turq);
-    --color-chart-3: oklch(67.79% 0.2054 42.88);
-    --color-chart-4: var(--color-purp);
-    --color-chart-5: oklch(57.21% 0.2171 347.82);
-    --color-chart-6: oklch(57.98% 0.131 197.47);
-    --color-shadow: oklch(44.31% 0.0000 240.00 / 0.3);
+  /* Light Theme Colors */
+  --color-background: oklch(99.27% 0.00363 107.04);
+  --color-foreground: oklch(3.92% 0.03 240);
+  --color-card: oklch(100% 0 0);
+  --color-card-foreground: oklch(3.53% 0 0);
+  --color-popover: oklch(100% 0 0);
+  --color-popover-foreground: oklch(3.53% 0 0);
+  --color-primary: oklch(8.24% 0 0);
+  --color-primary-foreground: oklch(98.04% 0 0);
+  --color-secondary: oklch(95.69% 0 0);
+  --color-secondary-foreground: oklch(8.24% 0 0);
+  --color-muted: oklch(80% 0 0);
+  --color-muted-foreground: oklch(45.1% 0 0);
+  --color-accent: oklch(87.06% 0.3 195 / 0.7);
+  --color-accent-foreground: oklch(8.24% 0 0);
+  --color-destructive: oklch(53.33% 0.3 20);
+  --color-destructive-foreground: oklch(98.04% 0 0);
+  --color-border: oklch(0% 0 0 / 0.15);
+  --color-input: oklch(92.94% 0 0);
+  --color-ring: oklch(3.53% 0 0);
+  --color-chart-1: oklch(44.67% 0.1892 256.96);
+  --color-chart-2: var(--color-turq);
+  --color-chart-3: oklch(67.79% 0.2054 42.88);
+  --color-chart-4: var(--color-purp);
+  --color-chart-5: oklch(57.21% 0.2171 347.82);
+  --color-chart-6: oklch(57.98% 0.131 197.47);
+  --color-shadow: oklch(44.31% 0 240 / 0.3);
 }
 
 .dark {
-    /* Dark Theme Colors */
-    --color-background: oklch(6.67% 0.0000 0.00);
-    --color-foreground: oklch(98.04% 0.0000 0.00);
-    --color-card: oklch(3.92% 0.0300 240.00);
-    --color-card-foreground: oklch(98.04% 0.0000 0.00);
-    --color-popover: oklch(3.92% 0.0300 240.00);
-    --color-popover-foreground: oklch(98.04% 0.0000 0.00);
-    --color-primary: oklch(98.04% 0.0000 0.00);
-    --color-primary-foreground: oklch(8.24% 0.0000 0.00);
-    --color-secondary: oklch(10.20% 0.0000 0.00 / 0.4);
-    --color-secondary-foreground: oklch(98.04% 0.0000 0.00);
-    --color-muted: oklch(30% 0.0000 0.00);
-    --color-muted-foreground: oklch(65% 0.0000 0.00);
-    --color-accent: oklch(87.06% 0.3000 195.00 / 0.3);
-    --color-accent-foreground: oklch(98.04% 0.0000 0.00);
-    --color-destructive: oklch(27.84% 0.3000 20.00);
-    --color-destructive-foreground: oklch(98.04% 0.0000 0.00);
-    --color-border: oklch(16.08% 0.0000 240.00);
-    --color-input: oklch(12.55% 0.0000 0.00);
-    --color-ring: oklch(82.75% 0.0000 0.00);
-    --color-chart-1: oklch(44.67% 0.1892 256.96);
-    --color-chart-2: var(--color-turq);
-    --color-chart-3: oklch(67.79% 0.2054 42.88);
-    --color-chart-4: var(--color-purp);
-    --color-chart-5: oklch(57.21% 0.2171 347.82);
-    --color-chart-6: oklch(57.98% 0.131 197.47);
-    --color-shadow: oklch(3.92% 0.0300 240.00 / 0.8);
+  /* Dark Theme Colors */
+  --color-background: oklch(6.67% 0 0);
+  --color-foreground: oklch(98.04% 0 0);
+  --color-card: oklch(3.92% 0.03 240);
+  --color-card-foreground: oklch(98.04% 0 0);
+  --color-popover: oklch(3.92% 0.03 240);
+  --color-popover-foreground: oklch(98.04% 0 0);
+  --color-primary: oklch(98.04% 0 0);
+  --color-primary-foreground: oklch(8.24% 0 0);
+  --color-secondary: oklch(10.2% 0 0 / 0.4);
+  --color-secondary-foreground: oklch(98.04% 0 0);
+  --color-muted: oklch(30% 0 0);
+  --color-muted-foreground: oklch(65% 0 0);
+  --color-accent: oklch(87.06% 0.3 195 / 0.3);
+  --color-accent-foreground: oklch(98.04% 0 0);
+  --color-destructive: oklch(27.84% 0.3 20);
+  --color-destructive-foreground: oklch(98.04% 0 0);
+  --color-border: oklch(16.08% 0 240);
+  --color-input: oklch(12.55% 0 0);
+  --color-ring: oklch(82.75% 0 0);
+  --color-chart-1: oklch(44.67% 0.1892 256.96);
+  --color-chart-2: var(--color-turq);
+  --color-chart-3: oklch(67.79% 0.2054 42.88);
+  --color-chart-4: var(--color-purp);
+  --color-chart-5: oklch(57.21% 0.2171 347.82);
+  --color-chart-6: oklch(57.98% 0.131 197.47);
+  --color-shadow: oklch(3.92% 0.03 240 / 0.8);
 }
 
 @layer base {
-    *,
-    ::after,
-    ::before,
-    ::backdrop,
-    ::file-selector-button {
-        border-color: var(--color-gray-200, currentColor);
-    }
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
 }
 
 @layer utilities {
-    /* Global Styles */
+  /* Global Styles */
 
-    /* Fonts */
+  /* Fonts */
+  :root {
+    font-family: Inter, sans-serif;
+    font-feature-settings:
+      "liga" 1,
+      "calt" 1,
+      "dlig" 1,
+      "case" 1,
+      "ss01" 1,
+      "ss02" 1,
+      "ss07" 1,
+      "ss08" 1;
+    text-color: var(--foreground-color);
+  }
+
+  @supports (font-variation-settings: normal) {
     :root {
-        font-family: Inter, sans-serif;
-        font-feature-settings:
-            "liga" 1,
-            "calt" 1,
-            "dlig" 1,
-            "case" 1,
-            "ss01" 1,
-            "ss02" 1,
-            "ss07" 1,
-            "ss08" 1;
-        text-color: var(--foreground-color);
+      font-family: InterVariable, sans-serif;
     }
+  }
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+  }
+  h1 {
+    font-size: min(4rem, 10vw);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 0;
+  }
+  h2 {
+    font-size: min(2.5rem, 10vw);
+    font-weight: 600;
+    padding: 2rem 0;
+  }
+  h3 {
+    font-size: min(1.2rem, 6vw);
+    font-weight: 600;
+  }
 
-    @supports (font-variation-settings: normal) {
-        :root {
-            font-family: InterVariable, sans-serif;
-        }
-    }
-    a {
-        text-decoration: none;
-        font-weight: 600;
-        transition: var(--transition);
-    }
-    h1 {
-        font-size: min(4rem, 10vw);
-        font-weight: 600;
-        line-height: 1.2;
-        margin-top: 0;
-    }
-    h2 {
-        font-size: min(2.5rem, 10vw);
-        font-weight: 600;
-        padding: 2rem 0;
-    }
-    h3 {
-        font-size: min(1.2rem, 6vw);
-        font-weight: 600;
-    }
+  p {
+    font-size: min(1rem, 5vw);
+    font-weight: 400;
+    color: inherit;
+  }
 
-    p {
-        font-size: min(1rem, 5vw);
-        font-weight: 400;
-        color: inherit;
-    }
+  .link {
+    color: var(--color-turq);
+  }
 
-    .link {
-        color: var(--color-turq));
-    }
+  :root {
+    --muted-color: rgba(255, 255, 255, 0.6); /* Muted white */
+    --border-color: rgba(255, 255, 255, 0.15); /* Subtle border */
+    --radius-md: 8px; /* Medium rounded corners */
+    --transition: all 0.2s ease-in-out; /* Smooth animations */
+  }
 
+  /* Base Styles */
+  body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  section {
+    padding: 5vw 10vw;
+  }
 
-
-    :root {
-        --muted-color: rgba(255, 255, 255, 0.6); /* Muted white */
-        --border-color: rgba(255, 255, 255, 0.15); /* Subtle border */
-        --radius-md: 8px; /* Medium rounded corners */
-        --transition: all 0.2s ease-in-out; /* Smooth animations */
-    }
-
-    /* Base Styles */
-    body {
-        margin: 0;
-        padding: 0;
-        scroll-behavior: smooth;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-    section {
-        padding: 5vw 10vw;
-    }
-
-    /* Dot Grid */
+  /* Dot Grid */
 }

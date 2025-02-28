@@ -1,12 +1,6 @@
 "use client";
 
-import {
-  ResponsiveContainer,
-  Bar,
-  BarChart,
-  CartesianGrid,
-  XAxis,
-} from "recharts";
+import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
 import {
   ChartConfig,
   ChartContainer,
@@ -104,7 +98,7 @@ export const description = "A stacked bar chart with NBA player stats";
 
 const NbaChart = () => {
   return (
-    <ChartContainer config={chartConfig} className="min-h-[200px] w-100%">
+    <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
       <BarChart accessibilityLayer data={chartData}>
         <CartesianGrid vertical={false} />
         <XAxis

@@ -80,7 +80,7 @@ const ProjectsSection = () => {
     >
       <div className="mx-auto text-left">
         <h2 className="">Projects</h2>
-        <div className="grid opacity-100 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 pt-2">
+        <div className="grid opacity-100 grid-cols-1 xs:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8 pt-2">
           {projects.map((project, index) => (
             <ScrollAnimation key={index}>
               <Card
@@ -102,39 +102,39 @@ const ProjectsSection = () => {
         </div>
       </div>
 
-      {/* ReactModal for Project Details */}
+      {/* ReactModal Project Pop Up */}
       <ReactModal
         isOpen={!!selectedProject}
         onRequestClose={() => setSelectedProject(null)}
-        className="bg-black text-golden p-6 w-[80vw] mx-auto rounded-xl shadow-lg mt-20 border border-golden focus:outline-none"
+        className="overflow-y-scroll bg-background text-foreground p-6 w-[80vw] mx-auto rounded-xl shadow-lg mt-20 border border-golden focus:outline-none "
         overlayClassName="fixed inset-0 bg-shadow  flex justify-center items-center"
       >
         {selectedProject && (
-          <div className="selection:bg-shadow selection:text-golden">
+          <div className="selection:bg-shadow selection:text-golden ">
             <button
               onClick={() => setSelectedProject(null)}
               className="group  text-golden text-4xl float-right  hover:cursor-pointer hover:-white"
             >
-              <div className="p-1 pb-2 object-contain">
-                <span className="block w-5 h-0.5 bg-golden  group-hover:bg-muted-foreground rotate-45 translate-y-1.5"></span>
+              <div className="p-2 pb-2 object-contain">
+                <span className="block w-5 h-0.5 bg-black  group-hover:bg-muted rotate-45 translate-y-1.5"></span>
 
-                <span className="block w-5 h-0.5 bg-golden mb-3 group-hover:bg-muted-foreground -rotate-45 translate-y-1"></span>
+                <span className="block w-5 h-0.5 bg-black mb-3 group-hover:bg-muted -rotate-45 translate-y-1"></span>
               </div>
             </button>
 
             <h2 className="text-xl display-inline ">{selectedProject.title}</h2>
 
             <p className="mt-2">{selectedProject.details}</p>
-            <div className="justify-center flex flex-wrap gap-4 w-full">
+            <div className="">
               {/* Charts */}
               {selectedProject.extra &&
                 selectedProject.extra.map((Extra, jindex) => (
-                  <div key={jindex} className="flex-1 max-w-sm">
+                  <div key={jindex} className="max-w-sm mx-auto p-2">
                     <Extra />
                   </div>
                 ))}
             </div>
-            <div className="mt-4 flex justify-between items-center">
+            <div className="mt-4 flex justify-right items-center">
               <a
                 href={selectedProject.github}
                 className="text-turq hover:text-muted-foreground"

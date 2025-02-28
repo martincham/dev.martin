@@ -4,11 +4,11 @@ const HeroSection = () => {
       <div className="mx-auto mt-[20vh] ">
         <h1
           style={{ fontSize: "max(2rem, 8.8vw)" }}
-          className="  mx-auto m-0 p-0 font-normal "
+          className="mx-auto m-0 p-0 font-normal"
         >
           Martin is optimizing.
         </h1>
-        <p style={{ fontSize: "max(1rem, 2vw)" }} className="textmx-auto">
+        <p style={{ fontSize: "max(1rem, 2vw)" }} className="text mx-auto p-">
           Data | Backend | Frontend | UI/UX | IOT
         </p>
       </div>
