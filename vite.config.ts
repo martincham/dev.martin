@@ -26,16 +26,10 @@ export default defineConfig({
     assetsDir: "assets",
     minify: "esbuild",
     rollupOptions: {
-      external: ["lodash", "d3"],
       output: {
-        manualChunks: {
-          recharts: ["recharts"],
-        },
+        manualChunks: {},
       },
       treeshake: true,
     },
-  },
-  optimizeDeps: {
-    include: ["recharts/es6"],
   },
 });
