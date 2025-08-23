@@ -13,6 +13,7 @@ const skills = [
       "SQL",
       "Ruby",
       "M/Mumps",
+      "Shell",
     ],
   },
   {
@@ -44,7 +45,7 @@ const SkillsSection = () => {
         <ScrollAnimation>
           {skills.map((skillCategory, index) => (
             <div key={index}>
-              <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-2">
+              <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8  2xl:grid-cols-10 gap-2">
                 <h3 className="col-start-1 col-span-full">
                   {skillCategory.title}
                 </h3>
