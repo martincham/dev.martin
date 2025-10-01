@@ -1,69 +1,67 @@
-import ScrollAnimation from "@/components/ui/ScrollAnimation";
-
 const resume = [
   {
-    role: "Freelance Software Engineer",
-    company: "",
-    details: [
-      "C++ and electronic design and implementation for a custom infrared remote",
-      "Building a project management tool with Ruby on Rails",
-      "Front-end development with React, Tailwind, and Typescript",
+    role: "Software Engineer",
+    company: "Town Fair Tire",
+    year: "Apr 2024–Present",
+    bullets: ["Built POS and retail operations platform with C#/.NET and SQL Server"],
+  },
+  {
+    role: "Full-Stack Developer",
+    company: "Freelance",
+    year: "Sep 2024–Apr 2025",
+    bullets: [
+      "Developed a property-management web-app in Ruby on Rails and JavaScript.",
+      "C++ and Arduino design and implementation for a custom infrared remote.",
+      "Website design and development in React, TypeScript, Tailwind, and Python.",
     ],
-    year: "2024-Present",
   },
   {
     role: "Design Teacher",
     company: "University of Georgia",
-    details: [
-      "Teaching problem solving, technical skills, and the creative process.",
+    year: "Aug 2022–May 2024",
+    bullets: [
+      "Designed curriculum and taught 4 semesters of undergrad design classes.",
+      "Guided students through month-long projects with weekly check-ins and design criticism.",
     ],
-    year: "2022-24",
   },
   {
     role: "Software Engineer",
     company: "Epic Systems",
-    details: [
-      "Developed population health analytics software using C#/.NET, SQL, and Typescript",
-      "Created distributed-system web services to communicate between servers hosting over 100 million patients",
-      "Researched, designed, and implemented data pipeline for OB/GYN data",
+    year: "Sep 2019–Jun 2021",
+    bullets: [
+      "Developed population health analytics software using C#/.NET, SQL, and TypeScript.",
+      "Created distributed system web services serving over 100 million patients.",
     ],
-    year: "2019-21",
   },
   {
-    role: "App Designer",
+    role: "UI/UX App Designer",
     company: "AppDev Grinnell",
-    details: [
-      "Designed an Android radio app with Figma and Sketch.",
-      "Crafted  a brand identity that fit the radio station's mission.",
-    ],
-    year: "2018-19",
+    year: "Aug 2018–May 2019",
+    bullets: ["Designed a mobile radio app in Figma, met with stakeholders to develop brand identity."],
   },
 ];
 
 const ExperienceSection = () => {
   return (
-    <section id="experience" className="">
-      <div className="mx-auto  text-left">
-        <h2 className="">Experience</h2>
-
+    <section className="p-3 border-b border-muted">
+      <h2 className="text-base font-semibold mb-1">Experience</h2>
+      <div className="space-y-2">
         {resume.map((job, index) => (
-          <ScrollAnimation key={index}>
-            <div>
-              <div className="flex justify-between">
-                <h3 className="">{job.role}</h3>
-                <h3 className="text-right">{job.year}</h3>
-              </div>
-              <p>{job.company}</p>
-              <ul className="pl-4 list-disc">
-                {job.details.map((detail, jindex) => (
-                  <li key={jindex}>{detail}</li>
-                ))}
-              </ul>
+          <div key={index}>
+            <div className="flex justify-between items-baseline gap-2 mb-0.5">
+              <h3 className="text-sm font-semibold leading-tight">{job.role}</h3>
+              <span className="text-xs text-muted-foreground whitespace-nowrap flex-shrink-0">{job.year}</span>
             </div>
-            {index < resume.length - 1 && (
-              <hr className="my-4 mx-auto h-[1px] border-muted" />
-            )}
-          </ScrollAnimation>
+            {job.company && <p className="text-xs text-muted-foreground leading-tight mb-0.5">{job.company}</p>}
+            <ul className="space-y-0.5">
+              {job.bullets.map((bullet, i) => (
+                <li key={i} className="text-xs leading-tight flex">
+                  <span className="mr-1.5">•</span>
+                  <span>{bullet}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         ))}
       </div>
     </section>
