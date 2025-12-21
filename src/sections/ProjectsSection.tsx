@@ -34,7 +34,7 @@ const projects: Project[] = [
 const ProjectsSection = () => {
   return (
     <section className="h-full overflow-y-auto px-8 py-12">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-3xl">
         <h2 className="text-3xl font-normal mb-12">Projects</h2>
         <div className="space-y-12">
           {projects.map((project, index) => (
