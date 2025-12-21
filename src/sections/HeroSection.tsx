@@ -1,16 +1,16 @@
 const HeroSection = () => {
   return (
-    <section id="hero" className="selection:bg-golden">
-      <div className="mx-auto mt-[20vh] ">
-        <h1
-          style={{ fontSize: "max(2rem, 4.5vw)" }}
-          className="mx-auto m-0 p-0 font-normal"
-        >
-          I'm Martin. I build things.
-        </h1>
-        <p style={{ fontSize: "max(1rem, 2vw)" }} className="text mx-auto p-">
-          Data | Backend | Frontend | UI/UX | IOT
-        </p>
+    <section className="h-full flex items-center px-8 overflow-y-auto">
+      <div className="max-w-2xl py-12">
+        <h1 className="text-4xl md:text-5xl font-normal mb-8 leading-tight">I build things.</h1>
+
+        <div className="border-t border-muted pt-6 mt-8">
+          <p className="text-sm text-muted-foreground">
+            BA Computer Science & Studio Art, Grinnell College, 2019
+            <br />
+            MFA Studio Arts, University of Georgia, 2024
+          </p>
+        </div>
       </div>
     </section>
   );

@@ -4,8 +4,7 @@ const AboutSection = () => {
       <h2 className="text-2xl font-semibold mb-6">About</h2>
       <div className="space-y-4">
         <p>
-          I love building and designing: robots, data tools, websites, and
-          more. I value ergonomics and efficiency.
+          I build robots, data tools, and websites with a focus on ergonomics and efficiency.
         </p>
         <div className="pt-2 space-y-1">
           <p>BA in Computer Science and Art, Grinnell College, 2019.</p>

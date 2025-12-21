@@ -2,7 +2,7 @@ const resume = [
   {
     role: "Software Engineer",
     company: "Town Fair Tire",
-    year: "Apr 2024–Present",
+    year: "Apr 2025–Present",
     bullets: ["Built POS and retail operations platform with C#/.NET and SQL Server"],
   },
   {
@@ -43,26 +43,28 @@ const resume = [
 
 const ExperienceSection = () => {
   return (
-    <section className="p-3 border-b border-muted">
-      <h2 className="text-base font-semibold mb-1">Experience</h2>
-      <div className="space-y-2">
-        {resume.map((job, index) => (
-          <div key={index}>
-            <div className="flex justify-between items-baseline gap-2 mb-0.5">
-              <h3 className="text-sm font-semibold leading-tight">{job.role}</h3>
-              <span className="text-xs text-muted-foreground whitespace-nowrap flex-shrink-0">{job.year}</span>
+    <section className="h-full overflow-y-auto px-8 py-12">
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-3xl font-normal mb-12">Experience</h2>
+        <div className="space-y-10">
+          {resume.map((job, index) => (
+            <div key={index}>
+              <div className="flex justify-between items-baseline mb-2">
+                <h3 className="text-xl font-medium">{job.role}</h3>
+                <span className="text-sm text-muted-foreground whitespace-nowrap">{job.year}</span>
+              </div>
+              {job.company && <p className="text-base text-muted-foreground mb-3">{job.company}</p>}
+              <ul className="space-y-2">
+                {job.bullets.map((bullet, i) => (
+                  <li key={i} className="text-base text-muted-foreground leading-relaxed flex">
+                    <span className="mr-3">·</span>
+                    <span>{bullet}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-            {job.company && <p className="text-xs text-muted-foreground leading-tight mb-0.5">{job.company}</p>}
-            <ul className="space-y-0.5">
-              {job.bullets.map((bullet, i) => (
-                <li key={i} className="text-xs leading-tight flex">
-                  <span className="mr-1.5">•</span>
-                  <span>{bullet}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
