@@ -17,7 +17,8 @@ const projects: Project[] = [
   },
   {
     title: "Statistical Basketball Analyzer",
-    description: "A Python tool I wrote to give more accurate valuations of NBA basketball players.",
+    description:
+      "A Python tool I wrote to give more accurate valuations of NBA basketball players.",
     tech: "Python, data analysis, statistical modeling, API",
     github: "https://github.com/martincham/espn-nba-fantasy-analyzer",
     year: "2023–2024",
@@ -26,7 +27,7 @@ const projects: Project[] = [
     title: "Art Portfolio Website",
     description: "For my sculptures.",
     tech: "React, TypeScript, Tailwind CSS, shadcn/ui",
-    github: "https:martinchamberlin.com",
+    github: "https://martinchamberlin.com",
     year: "2024",
   },
 ];
@@ -41,7 +42,11 @@ const ProjectsSection = () => {
             <div key={index} className="group">
               {project.image && (
                 <div className="mb-4 overflow-hidden rounded bg-muted/30">
-                  <img src={project.image} alt={project.title} className="w-full h-auto object-cover" />
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-auto object-cover"
+                  />
                 </div>
               )}
               <div className="flex items-baseline justify-between mb-2">
@@ -53,9 +58,13 @@ const ProjectsSection = () => {
                 >
                   {project.title}
                 </a>
-                <span className="text-sm text-muted-foreground flex-shrink-0 ml-4">{project.year}</span>
+                <span className="text-sm text-muted-foreground flex-shrink-0 ml-4">
+                  {project.year}
+                </span>
               </div>
-              <p className="text-base text-muted-foreground mb-2 leading-relaxed">{project.description}</p>
+              <p className="text-base text-muted-foreground mb-2 leading-relaxed">
+                {project.description}
+              </p>
               <p className="text-sm text-muted-foreground/70">{project.tech}</p>
             </div>
           ))}
