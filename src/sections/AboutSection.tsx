@@ -1,38 +1,16 @@
-import ScrollAnimation from "@/components/ui/ScrollAnimation";
-
 const AboutSection = () => {
   return (
-    <section id="about" className="border-t border-muted">
-      <div className="mx-auto bg-inherit text-left pt-8">
-        <ScrollAnimation>
-          <p className="">
-            I love building and designing: robots, data tools, websites, and
-            more. I value ergonomics and efficiency.
-          </p>
-          <p className="mt-4 ">
-            BA in Computer Science and Art, Grinnell College, 2019.
-          </p>
-          <p className="">MFA in Art, University of Georgia, 2024.</p>
-          <p> Based in New Haven, CT.</p>
-          <hr className="my-4 mx-auto h-[1px] border-muted" />
-          <div className="bg-inherit flex flex-wrap justify-left mt-4 font-medium ">
-            <a href="https://www.linkedin.com/in/martincham/">
-              <div className="px-2 text-turq hover:text-muted-foreground">
-                LinkedIn
-              </div>
-            </a>
-            <a href="https://github.com/martincham">
-              <div className="border-l border-muted px-2 text-turq hover:text-muted-foreground">
-                GitHub
-              </div>
-            </a>
-            <a href="/MartinChamberlinResume.pdf">
-              <div className="border-l border-muted px-2 text-turq hover:text-muted-foreground ">
-                Resume
-              </div>
-            </a>
-          </div>
-        </ScrollAnimation>
+    <section className="p-8">
+      <h2 className="text-2xl font-semibold mb-6">About</h2>
+      <div className="space-y-4">
+        <p>
+          I build robots, data tools, and websites with a focus on ergonomics and efficiency.
+        </p>
+        <div className="pt-2 space-y-1">
+          <p>BA in Computer Science and Art, Grinnell College, 2019.</p>
+          <p>MFA in Art, University of Georgia, 2024.</p>
+          <p>Based in New Haven, CT.</p>
+        </div>
       </div>
     </section>
   );

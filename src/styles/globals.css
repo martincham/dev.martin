@@ -115,53 +115,24 @@
   }
   a {
     text-decoration: none;
-    font-weight: 600;
-    transition: var(--transition);
-  }
-  h1 {
-    font-size: min(4rem, 10vw);
-    font-weight: 600;
-    line-height: 1.2;
-    margin-top: 0;
-  }
-  h2 {
-    font-size: min(2.5rem, 10vw);
-    font-weight: 600;
-    padding: 2rem 0;
-  }
-  h3 {
-    font-size: min(1.2rem, 6vw);
-    font-weight: 600;
+    transition: color 0.15s ease-in-out;
   }
 
-  p {
-    font-size: min(1rem, 5vw);
-    font-weight: 400;
+  button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font: inherit;
     color: inherit;
-  }
-
-  .link {
-    color: var(--color-turq);
-  }
-
-  :root {
-    --muted-color: rgba(255, 255, 255, 0.6); /* Muted white */
-    --border-color: rgba(255, 255, 255, 0.15); /* Subtle border */
-    --radius-md: 8px; /* Medium rounded corners */
-    --transition: all 0.2s ease-in-out; /* Smooth animations */
   }
 
   /* Base Styles */
   body {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
   }
-  section {
-    padding: 5vw 10vw;
-  }
-
-  /* Dot Grid */
 }

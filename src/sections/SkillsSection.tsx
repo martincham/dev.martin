@@ -1,68 +1,27 @@
-import ScrollAnimation from "@/components/ui/ScrollAnimation";
-
 const skills = [
   {
-    title: "Dev Languages",
-    items: [
-      "C#/.NET",
-      "Python",
-      "C++",
-      "Java",
-      "TypeScript",
-      "JavaScript",
-      "SQL",
-      "Ruby",
-      "M/Mumps",
-      "Shell",
-    ],
+    title: "Languages",
+    items: ["C#", ".NET", "C", "C++", "SQL", "Python", "Java", "Ruby", "Mumps", "JavaScript", "TypeScript"],
   },
   {
-    title: "Dev Tools",
-    items: ["React", "Tailwind", "Git", "Jira", "Pandas"],
-  },
-  {
-    title: "Design Tools",
-    items: [
-      "Figma",
-      "Sketch",
-      "Affinity",
-      "Illustrator",
-      "InDesign",
-      "Photoshop",
-      "Solidworks",
-      "Fusion360",
-      "Inventor",
-      "AutoCAD",
-    ],
+    title: "Tools",
+    items: ["Git", "Figma", "Google Cloud", "Jira/Trello/Wrike", "HTML", "CSS", "React", "Tailwind", "Rails"],
   },
 ];
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="border-y border-muted">
-      <h2 className="">Skills</h2>
-      <div className="mx-auto text-left space-y-6">
-        <ScrollAnimation>
-          {skills.map((skillCategory, index) => (
-            <div key={index}>
-              <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8  2xl:grid-cols-10 gap-2">
-                <h3 className="col-start-1 col-span-full">
-                  {skillCategory.title}
-                </h3>
-                {skillCategory.items.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="">
-                    {skill}
-                  </div>
-                ))}
-              </div>
-              {index < skills.length - 1 && (
-                <hr className="my-4 mx-auto h-[1px] border-muted" />
-              )}
-            </div>
-          ))}
-        </ScrollAnimation>
+    <div>
+      <h2 className="font-semibold mb-1">Skills</h2>
+      <div className="space-y-2">
+        {skills.map((skillCategory, index) => (
+          <div key={index}>
+            <h3 className="text-xs font-semibold mb-0.5 text-muted-foreground leading-tight">{skillCategory.title}</h3>
+            <p className="text-xs leading-tight">{skillCategory.items.join(", ")}</p>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 
