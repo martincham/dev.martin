@@ -1,6 +1,6 @@
 import { defineConfig, PluginOption } from "vite";
 import react from "@vitejs/plugin-react-swc";
-import path from "path";
+import path from "node:path";
 import tailwindcss from "@tailwindcss/vite";
 import { visualizer } from "rollup-plugin-visualizer";
 
@@ -18,17 +18,14 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": path.resolve(import.meta.dirname, "./src"),
     },
   },
   build: {
     outDir: "dist",
     assetsDir: "assets",
-    minify: "esbuild",
+    minify: "oxc",
     rollupOptions: {
-      output: {
-        manualChunks: {},
-      },
       treeshake: true,
     },
   },

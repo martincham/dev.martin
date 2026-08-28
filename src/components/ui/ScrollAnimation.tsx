@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useIntersectionObserver } from "@/lib/useIntersectionObserver";
 
 type ScrollAnimationProps = {
@@ -15,17 +15,12 @@ const ScrollAnimation: React.FC<ScrollAnimationProps> = ({
   const { ref, isVisible } = useIntersectionObserver({
     rootMargin: `0px 0px -${delay}px 0px`,
   });
-  const [hasAnimated, setHasAnimated] = useState(false);
-
-  useEffect(() => {
-    if (isVisible) setHasAnimated(true);
-  }, [isVisible]);
 
   return (
     <div
       ref={ref as React.RefObject<HTMLDivElement>}
       className={`transition-all duration-1000 ease-out transform will-change-transform ${
-        hasAnimated ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       } ${className}`}
     >
       {children}
